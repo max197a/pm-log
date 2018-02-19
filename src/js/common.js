@@ -1,0 +1,124 @@
+$(document).ready(function() {
+
+    function focusToggler() {
+        var inputs = document.querySelectorAll('.inputfile');
+        Array.prototype.forEach.call(inputs, function(input) {
+            var label = input.nextElementSibling,
+                labelVal = label.innerHTML;
+
+            input.addEventListener('change', function(e) {
+                var fileName = '';
+                if (this.files && this.files.length > 1)
+                    fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                else
+                    fileName = e.target.value.split('\\').pop();
+
+                if (fileName)
+                    label.querySelector('span').innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+
+            // Firefox bug fix
+            input.addEventListener('focus', function() {
+                input.classList.add('has-focus');
+            });
+            input.addEventListener('blur', function() {
+                input.classList.remove('has-focus');
+            });
+        });
+    }
+
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
+
+
+    $('.our-customers__carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nav: true
+    });
+    $('.transport__carousel').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      nav: false,
+      dots: false,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              nav: false,
+              loop: false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              nav: false,
+              loop: false,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              nav: false,
+              loop: false,
+              dots: true,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+    });
+
+    $(document).on('click', 'close-popup', function() {
+        $.magnificPopup.close();
+    });
+
+    $.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+
+    $.each($(".form-validation"), function() {
+        $(this).validate({
+            rules: {
+                field: {
+                    required: true
+                }
+            }
+        });
+        $(this).on('submit', function() {
+            var action = $(this).attr('action');
+
+            if (!$(this).find('input.error').length) {
+                $.post(action, $(this).serialize(), function() {
+                    // $.magnificPopup.close();
+                    var $thanksModal = $('#thankPopup')[0].outerHTML.replace('mfp-hide', '')
+                    $.magnificPopup.open({
+                        items: {
+                            src: $thanksModal
+                        },
+                        type: 'inline'
+                    });
+                })
+            }
+        })
+    })
+
+    $("input[name=phone]").mask("(999) 999-99-99");
+
+});
