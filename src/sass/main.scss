@@ -292,7 +292,8 @@ textarea {
     justify-content: space-between;
 }
 .corporate__item {
-    width: 50%;
+    width: 49%;
+    // margin-right: 0.5%;
     display: flex;
     align-items: center;
     // margin: 0 15px 45px 15px;
@@ -322,7 +323,7 @@ textarea {
 .transport__head {
     padding-top: 50px;
     padding-bottom: 60px;
-    border-top: 1px solid #f6f6f6;
+    border-top: 1px solid #eaeaea;
     display: flex;
     justify-content: flex-start;
 }
@@ -834,6 +835,7 @@ textarea {
 @import "_news-page";
 @import "_bus";
 @import "_order-bus";
+@import "_night";
 @import "_footer";
 @import "_media";
 * {

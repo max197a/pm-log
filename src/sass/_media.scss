@@ -122,7 +122,7 @@
 		}
 	}
 	// END bus-page
-	.head-container--editable {
+	.head-container.head-container--editable {
 		padding: 100px 0;
 	}
 	.head__sub-title {
@@ -664,7 +664,7 @@
 	// END bus-page
 
 	// BEGIN order-bus
-	.head-container--editable {
+	.head-container.head-container--editable {
 		padding: 100px 0 50px;
 		.head__info {
 			margin-top: 20px;
