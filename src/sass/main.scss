@@ -143,6 +143,10 @@ h2 {
     line-height: 1.2;
 }
 
+.mobile-hidden {
+    display: inline-block;
+}
+
 p {
     font-size: 16px;
     color: $dark;
@@ -283,7 +287,6 @@ textarea {
 }
 .corporate__grid {
     display: flex;
-    outline: 1px solid red;
     flex-wrap: wrap;
     max-width: 760px;
     justify-content: space-between;
@@ -330,7 +333,6 @@ textarea {
 }
 .transport__grid {
     display: flex;
-    outline: 1px solid red;
     flex-wrap: wrap;
     max-width: 760px;
     justify-content: space-between;
@@ -536,6 +538,7 @@ textarea {
     position: relative;
     z-index: 2;
     transition: $ease25;
+    max-width: 280px;
     .button {
         padding: 10px 15px;
         max-height: 40px;
@@ -566,8 +569,11 @@ textarea {
     text-align: right;
     z-index: 2;
     overflow: hidden;
-    // outline: 1px solid red;
-    // position: relative;
+    position: absolute;
+    z-index: 3;
+    height: 100px;
+    right: 0;
+    bottom: 0;
     img {
         position: absolute;
         right: 25px;
@@ -711,6 +717,31 @@ textarea {
 }
 // END license
 
+// BEGIN why-we
+.why-we {
+    padding: 60px 0;
+}
+.why-we__grid {
+    display: flex;
+    justify-content: space-between;
+}
+.why-we__left {
+    max-width: 425px;
+    width: 100%;
+    margin-right: 30px;
+}
+.why-we__right {
+    flex-wrap: wrap;
+        max-width: 760px;
+}
+.why-we__info {
+    line-height: 1.35;
+    font-size: 18px;
+    font-family: $font-light;
+    color: $grey;
+}
+// END why-we
+
 // BEGIN customers-carousel
 .our-customers {
     .slick-slider {
@@ -763,6 +794,9 @@ textarea {
     margin-top: 30px;
     position: relative;
 }
+.our-customers--editable {
+    margin-top: 70px;
+}
 .our-customers__grid {
     display: flex;
     justify-content: space-between;
@@ -799,6 +833,7 @@ textarea {
 // END customers-carousel
 @import "_news-page";
 @import "_bus";
+@import "_order-bus";
 @import "_footer";
 @import "_media";
 * {

@@ -64,7 +64,7 @@ $(document).ready(function() {
                     slidesToShow: 2,
                     nav: false,
                     loop: false,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
