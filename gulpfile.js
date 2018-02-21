@@ -15,13 +15,16 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
+var consolidate = require('gulp-consolidate');
+var yaml        = require('require-yaml');
+
 var path = {
     build: {
         html: './dist',
         js: './dist/assets/js',
         style: './dist/assets/css',
         img: './dist/images'
-    },  
+    },
     src: {
         html: './src/html/*.html',
         js: './src/js/*.js',
@@ -103,7 +106,8 @@ gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'image:build'
+    'image:build',
+    'list-pages'
 ]);
 
 gulp.task('notify', function () {
@@ -111,8 +115,22 @@ gulp.task('notify', function () {
         .pipe(notify("Откомпилил и собрал!"));
 });
 
+gulp.task('list-pages', function() {
+ 	delete require.cache[require.resolve('./src/list-pages/index.yaml')]
+   var pages = require('./src/list-pages/index.yaml');
+   return gulp
+     .src('src/list-pages/index.html')
+     .pipe(consolidate('lodash', {
+       pages: pages
+     }))
+     .pipe(gulp.dest('dist'));
+ });
+
 // Watch for changes
 gulp.task('watch', function () {
+    gulpwatcher('./src/list-pages/index.yaml', function (event, cb) {
+        gulp.start('list-pages');
+    });
     gulpwatcher([path.watch.html], function (event, cb) {
         gulp.start('html:build');
     });

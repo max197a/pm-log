@@ -1,0 +1,21 @@
+ProjectTitle: PM-LOG
+
+PageList:
+- file: homepage.html
+  ready: 70
+- file: bus.html
+  ready: 70
+- file: delivery.html
+  ready: 70
+- file: news.html
+  ready: 70
+- file: news-page.html
+  ready: 70
+- file: night.html
+  ready: 70
+- file: order-bus.html
+  ready: 70
+- file: price.html
+  ready: 70
+- file: spb.html
+  ready: 70
