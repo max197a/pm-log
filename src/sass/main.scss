@@ -147,6 +147,10 @@ h2 {
     display: inline-block;
 }
 
+// .desktop-hidden {
+//     display: none;
+// }
+
 .bg-grey {
     background: #f2f2f2;
 }
@@ -852,6 +856,7 @@ textarea {
 @import "_night";
 @import "_spb";
 @import "_delivery";
+@import "_price";
 @import "_footer";
 @import "_media";
 * {
