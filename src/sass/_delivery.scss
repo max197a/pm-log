@@ -1,0 +1,40 @@
+// BEGIN delivery-page
+.delivery-page {
+	background: url(../../images/bg-delivery.jpg) center center no-repeat;
+}
+.head__title-grid {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+	img {
+		width: 55px;
+		height: auto;
+		margin-right: 5px;
+	}
+	.head__info {
+		margin-top: 0;
+	}
+}
+
+.transport__list.transport__list-how-we-work--editable {
+	.how-we-work__number {
+		font-size: 48px;
+		font-family: $font-light-condensed;
+		color: rgba(255,255,255,0.2);
+		margin-bottom: 30px;
+	}
+	.transport__list-image {
+		max-height: 80px;
+		margin-bottom: 20px;
+		img {
+			height: 100%;
+		}
+	}
+	.transport__list-item {
+		border: none;
+		max-height: max-content;
+		height: auto;
+		height: max-content;
+	}
+}
+// BEGIN delivery-page
