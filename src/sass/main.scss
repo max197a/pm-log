@@ -170,7 +170,7 @@ input[type=phone],
 input[type=mail],
 textarea {
     background: #fff;
-    padding: 12px 20px;
+    padding: 11px 20px;
     color: rgba(38, 46, 57, 0.5);
     font-family: $font-regular;
     border-radius: 5px;
@@ -762,7 +762,8 @@ textarea {
 // END why-we
 
 // BEGIN customers-carousel
-.our-customers {
+.our-customers,
+.reviews {
     .slick-slider {
         .slick-arrow {
             position: absolute;
@@ -857,6 +858,8 @@ textarea {
 @import "_spb";
 @import "_delivery";
 @import "_price";
+@import "_about-company";
+@import "_contacts";
 @import "_footer";
 @import "_media";
 * {

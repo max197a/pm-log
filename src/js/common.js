@@ -42,6 +42,23 @@ $(document).ready(function() {
         slidesToScroll: 1,
         nav: true
     });
+
+    $('.reviews-carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        nav: true,
+        loop: true,
+        draggable: true,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
+    });
+
     $('.transport__carousel').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -124,6 +141,22 @@ $(document).ready(function() {
 
     $(document).on('click', 'close-popup', function() {
         $.magnificPopup.close();
+    });
+
+    $(document).on('click', '.offices__map-button', function(e) {
+        e.preventDefault();
+        $(this).parent('.offices__tab-buttons').find('.offices__button').removeClass('active');
+        $(this).addClass('active');
+        $(this).parent().parent('.offices__head').find('.offices__tab').fadeOut(0);
+        $(this).parent().parent('.offices__head').find('.offices__map').fadeIn(250);
+    });
+
+    $(document).on('click', '.offices__image-button', function(e) {
+        e.preventDefault();
+        $(this).parent('.offices__tab-buttons').find('.offices__button').removeClass('active');
+        $(this).addClass('active');
+        $(this).parent().parent('.offices__head').find('.offices__tab').fadeOut(0);
+        $(this).parent().parent('.offices__head').find('.offices__image').fadeIn(250);
     });
 
     $.validator.setDefaults({
