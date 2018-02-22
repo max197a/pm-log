@@ -36,6 +36,14 @@ $(document).ready(function() {
         mainClass: 'mfp-fade'
     });
 
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 1) {
+            $('header').addClass('fixed');
+        } else {
+            $('header').removeClass('fixed');
+        }
+    });
+
 
     $('.our-customers__carousel').slick({
         slidesToShow: 1,
@@ -51,12 +59,12 @@ $(document).ready(function() {
         loop: true,
         draggable: true,
         responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }]
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }]
     });
 
     $('.transport__carousel').slick({
@@ -139,9 +147,20 @@ $(document).ready(function() {
     });
 
 
-    $(document).on('click', 'close-popup', function() {
+    $(document).on('click', '.close-popup', function() {
         $.magnificPopup.close();
     });
+
+    $(document).on('click', '.hamburger', function() {
+        $(this).toggleClass('is-active');
+        $('.header__list').toggleClass('is-open');
+    });
+
+    $(document).on('click', '.open-dropdown-menu', function() {
+        $(this).toggleClass('is-active');
+        $(this).parent().toggleClass('open-menu');
+    });
+
 
     $(document).on('click', '.offices__map-button', function(e) {
         e.preventDefault();

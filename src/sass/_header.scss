@@ -1,0 +1,111 @@
+// BEGIN Header
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid rgba(148, 148, 148, 0.4);
+	transition: $ease25;
+	// overflow: hidden;
+	z-index: 1000;
+	&.fixed {
+		background: rgba(0,0,0,0.9);
+	}
+	.container {
+		overflow: visible;
+	}
+}
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+}
+.header__list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	overflow: visible;
+}
+.header__dropdown-menu {
+	position: absolute;
+	background: transparent;
+	left: 0;
+	top: 25px;
+	min-width: 200px;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: $ease25;
+	&.active {
+		height: auto;
+		background: rgba(0,0,0,0.95);
+	}
+	li {
+		padding: 10px 5px;
+		border-top: 1px solid rgba(148, 148, 148, 0.4);
+		&:first-child {
+			border-top: none;
+		}
+		a {
+			line-height: 1.4;
+		}
+	}
+}
+.header__list-item {
+	display: flex;
+	margin: auto;
+	position: relative;
+	a {
+		font-size: 16px;
+		color: #fff;
+		transition: $ease25;
+		padding: 5px 0;
+		&:hover {
+			color: $green;
+		}
+	}
+	&:hover {
+		.header__dropdown-menu {
+			height: auto;
+			opacity: 1;
+			background: rgba(0,0,0,0.95);
+		}
+	}
+	&:nth-child(1),
+	&:nth-child(2) {
+		z-index: 3;
+	}
+}
+.phone-link {
+	position: relative;
+	display: block;
+	&:after {
+		position: absolute;
+		display: block;
+		content: '';
+		font-size: 14px;
+		font-family: $font-light;
+		right: 0;
+		top: -15px;
+		color: $green;
+	}
+}
+.phone-link.msk {
+	&:after {
+		content: 'Москва';
+	}
+}
+.phone-link.spb {
+	&:after {
+		content: 'Санкт-Петербург';
+	}
+}
+.hamburger {
+	display: none;
+}
+.open-dropdown-menu {
+	display: none;
+}
+// END Header
