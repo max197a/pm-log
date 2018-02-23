@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    // BEGIN input[type=file]
+
     function focusToggler() {
         var inputs = document.querySelectorAll('.inputfile');
         Array.prototype.forEach.call(inputs, function(input) {
@@ -29,12 +31,20 @@ $(document).ready(function() {
         });
     }
 
+    // END input[type=file]
+
+    // BEGIN magnific popup
+
     $('.open-popup-link').magnificPopup({
         type: 'inline',
         midClick: true,
         removalDelay: 300,
         mainClass: 'mfp-fade'
     });
+
+    // END magnific popup
+
+    // BEGIN fixed class for header
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 1) {
@@ -44,6 +54,9 @@ $(document).ready(function() {
         }
     });
 
+    // END fixed class for header
+
+    // BEGIN slick-sliders
 
     $('.our-customers__carousel').slick({
         slidesToShow: 1,
@@ -102,9 +115,6 @@ $(document).ready(function() {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
@@ -146,6 +156,25 @@ $(document).ready(function() {
         focusOnSelect: true
     });
 
+    // END slick-sliders
+
+    // BEGIN count numbers
+
+    $('.stats-grid__number').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    // END count numbers
+
+    // BEGIN Button events
 
     $(document).on('click', '.close-popup', function() {
         $.magnificPopup.close();
@@ -160,7 +189,6 @@ $(document).ready(function() {
         $(this).toggleClass('is-active');
         $(this).parent().toggleClass('open-menu');
     });
-
 
     $(document).on('click', '.offices__map-button', function(e) {
         e.preventDefault();
@@ -177,6 +205,10 @@ $(document).ready(function() {
         $(this).parent().parent('.offices__head').find('.offices__tab').fadeOut(0);
         $(this).parent().parent('.offices__head').find('.offices__image').fadeIn(250);
     });
+
+    // END Button events
+
+    // BEGIN Form validation 
 
     $.validator.setDefaults({
         debug: true,
@@ -209,6 +241,12 @@ $(document).ready(function() {
         })
     })
 
+    // END Form validation 
+
+    // BEGIN Mask input
+
     $("input[name=phone]").mask("(999) 999-99-99");
+
+    // END Mask input
 
 });

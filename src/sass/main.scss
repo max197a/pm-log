@@ -123,19 +123,6 @@ textarea.error {
     }
 }
 
-.white-popup {
-    cursor: default;
-    a.button {
-        margin-top: 50px;
-    }
-}
-
-.mfp-container.mfp-s-ready.mfp-inline-holder,
-.mfp-wrap,
-.mfp-content {
-    cursor: url(../../images/cursor.png), auto !important;
-}
-
 h1 {
     font-size: 90px;
     color: #fff;
@@ -292,6 +279,7 @@ textarea {
     font-size: 16px;
     color: #ffffff;
     line-height: 1.1;
+    animation-delay: 5s;
 }
 // END head-container
 
@@ -854,6 +842,151 @@ textarea {
         height: auto;
         width: auto;
     }
+}
+.thankPopup {
+    background: $green;
+    padding: 60px;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    h3 {
+        font-size: 36px;
+        color: #fff;
+        line-height: 1.2;
+        font-family: $font-light;
+    }
+    .mfp-close {
+        background: transparent;
+        opacity: 1;
+        transform: rotate(45deg);
+        &:after {
+            position: static;
+            display: block;
+            content: '+';
+            color: #fff;
+            font-size: 60px;
+            font-family: $font-light;
+            color: #fff;
+            position: absolute;
+            line-height: 17px;
+            top: 0;
+            left: -9px;
+        }
+    }
+}
+.white-popup {
+    background: #fff;
+    width: 90%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 60px;
+    position: relative;
+    .mfp-close {
+        background: transparent;
+        opacity: 1;
+        transform: rotate(45deg);
+        &:after {
+            position: static;
+            display: block;
+            content: '+';
+            font-size: 60px;
+            font-family: $font-light;
+            color: $green;
+            position: absolute;
+            line-height: 17px;
+            top: 0;
+            left: -9px;
+        }
+    }
+    h3 {
+        font-family: $font-light;
+        color: #000;
+        font-size: 60px
+    }
+    p {
+        margin-top: 25px;
+        color: $light-grey;
+        line-height: 1.3;
+        font-family: $font-regular;
+        font-size: 18px;
+    }
+    label {
+        font-size: 14px;
+        font-family: $font-regular;
+        color: rgba(0,0,0,0.6);
+    }
+    .footer-form {
+        margin-top: 20px;
+    }
+    .form-grid {
+        flex-wrap: wrap;
+    }
+    input[type=text],
+    input[type=mail] {
+        background: #f2f2f2;
+    }
+    .inputfile + label {
+      max-width: 100%;
+      font-size: 18px;
+      color: $green;
+      white-space: nowrap;
+      cursor: pointer;
+      display: inline-block;
+      overflow: hidden;
+      margin: 20px 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
+    .container-checkbox {
+        margin-bottom: 0;
+        color: #000;
+        a {
+            color: inherit;
+            border-bottom: 1px solid #000;
+            transition: $ease25;
+        }
+        &:hover {
+            a {
+                color: $green;
+                border-color: $green;
+            }
+        }
+    }
+}
+.white-popup.white-popup--editable {
+    padding: 25px 60px 60px 60px;
+    background: transparent;
+    iframe {
+        width: 100%;
+        height: 80vh;
+    }
+    p {
+        color: #fff;
+        margin-top: 25px;
+        font-family: $font-light;
+        font-size: 18px;
+    }
+}
+.input-container {
+    &:nth-child(1),
+    &:nth-child(2) {
+        z-index: 2;
+    }
+}
+
+.white-popup,
+.thankPopup {
+    cursor: default;
+    a.button {
+        margin-top: 50px;
+    }
+}
+
+.mfp-container.mfp-s-ready.mfp-inline-holder,
+.mfp-wrap,
+.mfp-content {
+    cursor: url(../../images/cursor.png), auto !important;
 }
 // END customers-carousel
 @import "_news-page";

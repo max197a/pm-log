@@ -1272,6 +1272,40 @@
 	    	font-size: 11px;
 	    }
     }
+    .thankPopup {
+    	padding: 20px;
+    	.mfp-close {
+    		right: 10px;
+    		top: 10px;
+    	}
+    	h3 {
+    		font-size: 24px;
+    	}
+    }
+    .white-popup {
+    	padding: 20px;
+    	.mfp-close {
+    		right: 10px;
+    		top: 10px;
+    	}
+    	h3 {
+    		font-size: 24px;
+    	}
+    	p {
+    		font-size: 14px;
+    		margin-top: 15px;
+    	}
+    	label {
+    		font-size: 12px;
+    	}
+    	.input-container {
+    		max-width: 230px;
+    		width: 48%;
+    	}
+    	.inputfile + label {
+    		font-size: 14px;
+    	}
+    }
 }
 
 @media screen and (max-width: 568px) {
