@@ -1,0 +1,248 @@
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+// height
+=rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content
+
+=rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @content
+
+=text-overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+=hover
+  .no-touch &:hover
+    @content
+
+// retina, also available as +hdpi
+=retina
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+    @content
+
+// vertical-align at center
+=vcenter
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+// font-family
+=font($alias, $name)
+  @font-face
+    font-family: $alias
+    src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff")
+    font-weight: normal
+    font-style: normal
+// to use:
+//+font(black, cytiapro-black-webfont)
+
+=f($name, $font-size: null, $letter-spacing: null)
+  $font-family: null
+  @if $name == "l"
+    $font-family: "light"
+  font-family: $font-family
+  font-weight: normal
+  @if $font-size != null
+    font-size: $font-size + px
+  @if $letter-spacing != null
+    letter-spacing: ($letter-spacing / 1000) + em
+
+=prevent-text
+  word-break: break-all
+  word-break: break-word
+  hyphens: auto
+
+=font-smoothing($val: antialiased)
+  font-smoothing: $val
+
+=scrollbar
+  &::-webkit-scrollbar
+    @content
+
+=scrollbar-track
+  &::-webkit-scrollbar-track
+    @content
+
+=scrollbar-thumb
+  &::-webkit-scrollbar-thumb
+    @content
+
+=scrollbar-track-piece
+  &::-webkit-scrollbar-track-piece
+    @content
+
+//triangle
+=arr($width, $height, $bg, $direction)
+  width: 0px
+  height: 0px
+  border-style: solid
+  @if $direction == t
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == r
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px
+    border-color: transparent transparent transparent $bg
+  @if $direction == b
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px
+    border-color: $bg transparent transparent transparent
+  @if $direction == l
+    border-width: $height / 2 + px $width + px $height / 2 + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == tl
+    border-width: $height + px $width + px 0 0
+    border-color: $bg transparent transparent transparent
+  @if $direction == tr
+    border-width: 0 $width + px $height + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == br
+    border-width: 0 0 $height + px $width + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == bl
+    border-width: $width + px 0 0 $height + px
+    border-color: transparent transparent transparent $bg
+// example
+// +arr(500,50, #000, l)
+// +arr(500,50, #000, bl)
+
+=better-blur($radius)
+  -webkit-filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='#{$radius}' result='b'/%3E%3CfeMorphology operator='dilate' radius='#{$radius}'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a")
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='#{$radius}' result='b'/%3E%3CfeMorphology operator='dilate' radius='#{$radius}'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a")
+
+
+
+
+
+
+
+=css3-prefix($property, $value)
+  -webkit-#{$property}: #{$value}
+  -moz-#{$property}: #{$value}
+  -ms-#{$property}: #{$value}
+  -o-#{$property}: #{$value}
+  #{$property}: #{$value}
+
+/// Keyframes
+/// @param {*} $animation-name - Animation name
+/// @content [Animation css]
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+
+  @-moz-keyframes #{$animation-name}
+    @content
+
+  @-ms-keyframes #{$animation-name}
+    @content
+
+  @-o-keyframes #{$animation-name}
+    @content
+
+  @keyframes #{$animation-name}
+    @content
+
+/// Background Gradient
+/// @param {Color} $startColor [#3C3C3C] - Start Color
+/// @param {Color} $endColor [#999999] - End Color
+=background-gradient($startColor: #3c3c3c, $endColor: #999999)
+  background-color: $startColor
+  background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor))
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor)
+  background-image: -moz-linear-gradient(top, $startColor, $endColor)
+  background-image: -ms-linear-gradient(top, $startColor, $endColor)
+  background-image: -o-linear-gradient(top, $startColor, $endColor)
+  background-image: linear-gradient(top, $startColor, $endColor)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}')
+
+=placeholder-color($color)
+  &::-webkit-input-placeholder
+    color: $color
+  &::-moz-placeholder
+    color: $color
+  /* Firefox 19+
+  &:-moz-placeholder
+    color: $color
+  /* Firefox 18-
+  &:-ms-input-placeholder
+    color: $color
+
+=cf
+  &:before,
+  &:after
+    display: table
+    content: ''
+  &:after
+    clear: both
+
+=clearafter
+  &:after
+    display: table
+    clear: both
+    content: ''
+
+=transform($string)
+  -webkit-transform: $string
+  -moz-transform: $string
+  -ms-transform: $string
+  -o-transform: $string
+  transform: $string
+
+=transition($string)
+  -webkit-transition: $string
+  -moz-transition: $string
+  -ms-transition: $string
+  -o-transition: $string
+  transition: $string
+
+=bs
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+=rem($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+=of($value)
+  -webkit-object-fit: $value
+  -moz-object-fit: $value
+  -ms-object-fit: $value
+  object-fit: $value
+
+//Triangle generator
+=triangle($direction, $size: 6px, $color: #222222)
+  content: ''
+  display: block
+  position: absolute
+  height: 0
+  width: 0
+  @if $direction == "up"
+    border-bottom: $size solid $color
+    border-left: 1 / 2 * $size solid transparent
+    border-right: 1 / 2 * $size solid transparent
+  @else if $direction == "down"
+    border-top: $size solid $color
+    border-left: 1 / 2 * $size solid transparent
+    border-right: 1 / 2 * $size solid transparent
+  @else if $direction == "left"
+    border-top: 1 / 2 * $size solid transparent
+    border-bottom: 1 / 2 * $size solid transparent
+    border-right: $size solid $color
+  @else if $direction == "right"
+    border-top: 1 / 2 * $size solid transparent
+    border-bottom: 1 / 2 * $size solid transparent
+    border-left: $size solid $color

@@ -1,0 +1,124 @@
+---
+title: Price
+bodyClass: homepage
+---
+extends shared/_layout
+
+block content
+
+  // Begin wrapper-main
+  .head-container.head-container--editable.spb-page
+    .container
+      .head__grid
+        .head__left
+          h1.head__title Развозка сотрудников в Петербурге и области
+          a.button(href='#') расчитать маршрут
+        .main__right
+          h2.head__sub-title
+            | Компания PM-Logistics предлагает лучшие услуги по развозке сотрудников в Санкт-Петербурге. Работаем в данной сфере не первый год, поэтому точно знаем, насколько важно обеспечить рабочему персоналу удобное перемещение по городу.
+          p.head__info
+            | Для любой компании, выбор данной услуги позволит сохранить ценные кадры и улучшить производительность труда в организации. Гарантируем безопасность пассажиров, и соблюдение всех нормативно-правовых актов.
+  .wrapper-main
+    // Begin corporate-transportation
+    .corporate-transportation
+      .container
+        .corporate__title-container
+          h2 Качественные и безопасные перевозки от PM-Logistics, это:
+        .corporate__grid
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/bus.svg', alt='')
+            p.corporate__info
+              | Собственный автопарк, более 70 моделей транспорта разного уровня комфорта и вместительности;
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/protect.svg', alt='')
+            p.corporate__info
+              | Максимальная безопасность развозок, наличие обязательного страхования пассажиров;
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/time.svg', alt='')
+            p.corporate__info Никаких опозданий! Прибытие транспорта за 30 минут до выезда;
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/lopata.svg', alt='')
+            p.corporate__info Развозка сотрудников на постоянной основе, по фиксированной стоимости.
+    // End corporate-transportation
+    .bg-grey
+      // Begin why-we.why-we-editable
+      .why-we
+        include components/_why-we--editable
+      // End why-we
+      // Begin transport
+      .transport
+        .container
+          .transport__head
+            .transport__title
+              h2 Транспорт на любое количество сотрудников
+            .transport__grid
+              p.transport__number 110+
+              p.transport__info
+                | единиц
+                br
+                |  транспорта
+          .transport__carousel
+            .transport__item(style='background: url(images/transport-1.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Минивены (8–12 мест)
+                p Hyundai Starex
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-2.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Микроавтобусы (15–20 мест)
+                p Mercedes Sprinter, Ford Transit
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-3.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Мидиавтобусы (21–35 мест)
+                p Hyundai County, Hyundai Aerotown
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-4.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Автобусы (45 мест)
+                p Mercedes 350, Higer, Kia Grandbird
+                a.button(href='#') подробнее
+          .transport__list
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/comp.svg', alt='')
+              p
+                | Наша компетенция — корпоративные перевозки, работаем только с юридическими лицами
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/iso.svg', alt='')
+              p Компания сертифицирована по менеджменту качества ISO 9001
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/ball.svg', alt='')
+              p
+                | Система спутникового мониторинга ГЛОНАСС, круглосуточная диспетчерская
+                br
+                a(href='tel:88002228460') 8 800 222-84-60
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/doc.svg', alt='')
+              p Путевые листы, медосмотры, журналы выпуска на линию, инструктажи
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/recycle.svg', alt='')
+              p При поломке автобуса — замена на дежурный в течение 30 минут
+      // End transport
+      // Begin our-customers
+      .our-customers.our-customers--editable
+        include components/_customers-carousel
+      // End our-customers
+    .how-order.bg-green
+      .container
+        h2 Как заказать услугу?
+        .how-order__grid
+          img(src='images/white-icon.png', alt='')
+          p
+            | Чтобы оформить заказ на развозку пассажиров в Санкт-Петербурге от нашей компании, достаточно оставить заявку на сайте и дождаться звонка нашего менеджера!
+            br.mobile-hidden
+            span
+              | Выбирайте качественные и безопасные услуги на выгодных условиях от компании PM-Logistics.

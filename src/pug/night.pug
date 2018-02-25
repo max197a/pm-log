@@ -1,0 +1,119 @@
+---
+title: News page
+bodyClass: homepage
+---
+extends shared/_layout
+
+block content
+
+  // Begin wrapper-main
+  .head-container.head-container--editable.night-page
+    .container
+      .head__grid
+        .head__left
+          h1.head__title Развозка персонала ночью
+          a.button(href='#') расчитать маршрут
+        .main__right
+          h2.head__sub-title
+            | Если вы ищите качественные услуги по развозке персонала ночью, то к вашим услугам компания PM-Logistics. Ночные перевозки сотрудников очень важны, если вы цените свой персонал и стремитесь улучшать качество рабочего процесса.
+          p.head__info
+            | Благодаря своевременной развозке у рабочих будет больше времени, чтобы выспаться и набраться сил, для более продуктивной работы. К тому же, это весомая экономия средств, ведь вам не придется тратить бюджет компании на организацию собственного автопарка. Наша компания работает в сфере перевозок более 10 лет и гарантирует безопасность, оперативность и высокое качество услуг. Ночные перевозки осуществляются с соблюдением скоростного режима и нормативно-правовых актов.
+  .wrapper-main
+    // Begin corporate-transportation
+    .corporate-transportation
+      .container
+        .corporate__title-container
+          h2 Что мы предлагаем:
+        .corporate__grid
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/connect.svg', alt='')
+            p.corporate__info
+              | Современный транспорт с максимальным уровнем безопасности и комфорта. Модель и вместительность автобуса выбирает клиент. Гарантируем чистый салон, удобные сидения, климат-контроль и Wi-Fi.
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/time.svg', alt='')
+            p.corporate__info
+              | Транспорт прибывает за полчаса до отправления в назначенное место без опозданий и задержек. Развозит всех пассажиров по месту проживания.
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/route.svg', alt='')
+            p.corporate__info Разработка собственного маршрута, в объезд пробкам.
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/lopata.svg', alt='')
+            p.corporate__info Работа по фиксированной стоимости.
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/protect.svg', alt='')
+            p.corporate__info
+              | Безопасность пассажиров. Имеем все необходимые лицензии для работы, а также страховку для пассажиров. Перед каждым выездом проверяется исправность транспорта, и каждый водитель проходит проверку на состояние здоровья. Мы заботимся о сохранности наших клиентов.
+    // End corporate-transportation
+    .bg-grey
+      // Begin why-we
+      .why-we
+        include components/_why-we
+      // End why-we
+      // Begin transport
+      .transport
+        .container
+          .transport__head
+            .transport__title
+              h2 Транспорт на любое количество сотрудников
+            .transport__grid
+              p.transport__number 110+
+              p.transport__info
+                | единиц
+                br
+                | 		    				транспорта
+          .transport__carousel
+            .transport__item(style='background: url(images/transport-1.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Минивены (8–12 мест)
+                p Hyundai Starex
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-2.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Микроавтобусы (15–20 мест)
+                p Mercedes Sprinter, Ford Transit
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-3.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Мидиавтобусы (21–35 мест)
+                p Hyundai County, Hyundai Aerotown
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-4.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Автобусы (45 мест)
+                p Mercedes 350, Higer, Kia Grandbird
+                a.button(href='#') подробнее
+          .transport__list
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/comp.svg', alt='')
+              p
+                | Наша компетенция — корпоративные перевозки, работаем только с юридическими лицами
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/iso.svg', alt='')
+              p Компания сертифицирована по менеджменту качества ISO 9001
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/ball.svg', alt='')
+              p
+                | Система спутникового мониторинга ГЛОНАСС, круглосуточная диспетчерская 
+                br
+                a(href='tel:88002228460') 8 800 222-84-60
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/doc.svg', alt='')
+              p Путевые листы, медосмотры, журналы выпуска на линию, инструктажи
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/recycle.svg', alt='')
+              p При поломке автобуса — замена на дежурный в течение 30 минут
+      // End transport
+      // Begin our-customers
+      .our-customers.our-customers--editable
+        include components/_customers-carousel
+      // End our-customers

@@ -1,0 +1,170 @@
+---
+title: Delivery
+bodyClass: homepage
+---
+extends shared/_layout
+
+block content
+
+  // Begin wrapper-main
+  .head-container.head-container--editable.spb-page
+    .container
+      .head__grid
+        .head__left
+          h1.head__title Доставка сотрудников в Москве и области
+          .head__title-grid
+            img(src='images/icons/protect.svg', alt='')
+            p.head__info Гарантия соблюдения сроков и безопасности
+          a.button(href='#') расчитать маршрут
+        .main__right
+          h2.head__sub-title
+            | Компания PM-Logistics специализируется на перевозке сотрудников. Мы заботимся о безопасности клиентов, строго соблюдаем нормативно-правовые акты и скоростной режим.
+          p.head__info
+            | Все пассажиры застрахованы в Росгосстрах. Водители, прежде чем устроиться на работу, проходит строгое тестирование и имеют стаж от 10 лет. Перед рейсом все проходят предрейсовый медосмотр.
+  .wrapper-main
+    // Begin corporate-transportation
+    .corporate-transportation
+      .container
+        .corporate__title-container
+          h2 Максимально комфортные условия для пассажиров
+        .corporate__grid
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/bus.svg', alt='')
+            p.corporate__info Все автобусы современные, чистые и высококомфортабельные
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/time.svg', alt='')
+            p.corporate__info При поломке автобуса подается новый транспорт в течение 30 минут
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/pin.svg', alt='')
+            p.corporate__info За 30 минут до посадки подается автобус, чтобы люди не ждали на улице
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/places.svg', alt='')
+            p.corporate__info Можно выбрать транспорт из нашего автопарка на необходимое количество мест
+          .corporate__item.corporate__item--night-editable
+            .corporate__icon
+              img(src='images/icons/connect.svg', alt='')
+            p.corporate__info Есть бесплатный Wi-Fi, климат-контроль, удобные сидения с ремнями безопасности
+    // End corporate-transportation
+    .bg-grey
+      // Begin why-we.why-we-editable
+      .why-we
+        .container
+          .why-we__grid.why-we__grid--editable
+            .why-we__left
+              h2.why-we__title
+                | Почему
+                br.mobile-hidden
+                |                                 выбирают нас?
+            .why-we__right
+              .why-we__right-item
+                p.why-we__number 01-
+                p.why-we__info
+                  | Работаем только с юридическими лицами. Осуществляем перевозку сотрудников торговых и производственных компаний, промышленных объектов, бизнес-центров, логистических комплексов.
+              .why-we__right-item
+                p.why-we__number 02-
+                p.why-we__info
+                  | Мобильное приложение и система спутникового мониторинга ГЛОНАСС позволяет старшему менеджеру контролировать перевозку персонала и в режиме реального времени проверять, где находится автобус, время отправления и прибытия.
+              .why-we__right-item
+                p.why-we__number 03-
+                p.why-we__info
+                  | Высокое качество обслуживания корпоративных клиентов обусловлено и тем, что наша компания является узкоспециализированной. Мы занимаемся исключительно перевозками сотрудников, поэтому знаем все предпочтения заказчиков. Компания сертифицирована по менеджменту качества ISO 9001.
+      // End why-we
+      // Begin transport
+      .transport
+        .container
+          .transport__head
+            .transport__title
+              h2 Транспорт на любое количество сотрудников
+            .transport__grid
+              p.transport__number 110+
+              p.transport__info
+                | единиц
+                br
+                |  транспорта
+          .transport__carousel
+            .transport__item(style='background: url(images/transport-1.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Минивены (8–12 мест)
+                p Hyundai Starex
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-2.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Микроавтобусы (15–20 мест)
+                p Mercedes Sprinter, Ford Transit
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-3.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Мидиавтобусы (21–35 мест)
+                p Hyundai County, Hyundai Aerotown
+                a.button(href='#') подробнее
+            .transport__item(style='background: url(images/transport-4.jpg) center center no-repeat; background-size: cover;')
+              .transport__item-info
+                h3 Автобусы (45 мест)
+                p Mercedes 350, Higer, Kia Grandbird
+                a.button(href='#') подробнее
+          .transport__list
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/comp.svg', alt='')
+              p
+                | Наша компетенция — корпоративные перевозки, работаем только с юридическими лицами
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/iso.svg', alt='')
+              p Компания сертифицирована по менеджменту качества ISO 9001
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/ball.svg', alt='')
+              p
+                | Система спутникового мониторинга ГЛОНАСС, круглосуточная диспетчерская
+                br
+                a(href='tel:88002228460') 8 800 222-84-60
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/doc.svg', alt='')
+              p Путевые листы, медосмотры, журналы выпуска на линию, инструктажи
+            .transport__list-item
+              .transport__list-image
+                img(src='images/icons/recycle.svg', alt='')
+              p При поломке автобуса — замена на дежурный в течение 30 минут
+      // End transport
+      // Begin our-customers
+      .our-customers.our-customers--editable
+        include components/_customers-carousel
+      // End our-customers
+    .how-order.how-we-work.bg-green
+      .container
+        h2 Как мы работаем
+        .transport__list.transport__list-how-we-work--editable
+          .transport__list-item
+            h3.how-we-work__number 01
+            .transport__list-image
+              // <img src="images/icons/phone.svg" alt="">
+              svg(xmlns='http://www.w3.org/2000/svg', width='40', height='40')
+                path(d='M23.2 24.6c-.5.2-.9.4-1.2.5-1.2.4-2.4.3-3.5-.4-4.9-3.2-8.9-7.2-12.1-12.1-1-1.6-.9-3.3.4-4.7.4-.5.9-.9 1.4-1.4 1.2-1 2.8-1 4 .1l1.5 1.5c1.2 1.2 1.3 2.4.2 3.8-.1.2-.2.3-.4.6 1.6 1.9 3.3 3.6 5.2 5.2l.9-.6c1.3-.7 2.5-.6 3.5.5.5.4.9.9 1.4 1.4 1.3 1.3 1.4 2.6.2 4-.1.1-.2.3-.4.4 0 .3.1.6.2 1 .3 2.5-.7 4.4-2.9 5.5-1.6.8-3.3 1.1-5.1 1.2-8.7.4-16-6.2-16.5-14.9C-.4 8.9 5 2 12.3.4c8.9-2 17.5 3.9 18.9 12.9.6 3.7-.1 7.2-2.1 10.4-.2.3-.5.6-.8.8-.1.1-.5 0-.7-.1-.1-.1-.1-.4 0-.6.1-.2.3-.4.4-.7 5.3-9.1-.1-20.5-10.6-21.9C9.6.1 2.3 5.9 1.5 13.7c-.9 7.8 4 14.6 11.6 16.1 2.2.4 4.4.4 6.5-.2 1.1-.3 2.2-.8 2.9-1.8.7-1 .9-2 .7-3.2zM12 12.5c0-.1 0-.2.1-.2.3-.3.6-.7.8-1 .7-.9.7-1.4 0-2.3l-.9-.9c-1.8-1.8-1.9-1.8-3.7.1-1.5 1.5-1.6 2.4-.4 4.2 2.5 3.8 5.6 7 9.2 9.7.8.6 1.7 1.2 2.6 1.8 1 .6 1.9.5 2.7-.3.5-.5 1.1-1 1.6-1.6.6-.7.5-1.3 0-2-.5-.5-1-1-1.5-1.6-1.1-1.1-1.4-1.1-2.6 0-.9.8-1.1.9-1.9.1-1.8-1.7-3.5-3.5-5.3-5.3-.4-.1-.6-.4-.7-.7z', fill='#fff')
+            p Оставьте заявку на сайте или позвоните нам
+          .transport__list-item
+            h3.how-we-work__number 02
+            .transport__list-image
+              img(src='images/icons/hands.svg', alt='')
+            p Обговариваем условия сотрудничества
+          .transport__list-item
+            h3.how-we-work__number 03
+            .transport__list-image
+              img(src='images/icons/math.svg', alt='')
+            p В индивидуальном порядке рассчитываем стоимость услуг
+          .transport__list-item
+            h3.how-we-work__number 04
+            .transport__list-image
+              img(src='images/icons/docs.svg', alt='')
+            p
+              | Заключаем договор (цены, прописанные в договоре, не повышаются на весь период действия договора)
+          .transport__list-item
+            h3.how-we-work__number 05
+            .transport__list-image
+              img(src='images/icons/an-bus.svg', alt='')
+            p С назначенной даты и времени начинаем работать

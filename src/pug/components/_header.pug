@@ -1,0 +1,52 @@
+// Begin header
+header.header
+  .container
+    // Begin header-nav
+    nav.header-nav
+      .header__mobile-layout
+      img.header__logotype(src='images/logotype.png', alt='')
+      // <div class="header__reverse-container">
+      ul.header__list.header__list-menu
+        li.header__list-item
+          a.desktop-hidden.open-dropdown-menu(href='#')
+            img(src='images/plus-symbol.svg', alt='')
+          a(href='#') Заказать автобус
+          ul.header__dropdown-menu
+            li
+              a(href='#') 17 мест - минивен
+            li
+              a(href='#') 20 мест - микроавтобус
+            li
+              a(href='#') 35 мест - микроавтобус
+            li
+              a(href='#') 50 мест - микроавтобус
+        li.header__list-item
+          a#sec1.desktop-hidden.open-dropdown-menu(href='#')
+            img(src='images/plus-symbol.svg', alt='')
+          a(href='#') Услуги
+          ul.header__dropdown-menu
+            li
+              a(href='#') Перевозка сотрудников
+            li
+              a(href='#') Перевозка сотрудников СПБ
+            li
+              a(href='#') Ночная перевозка сотрудников
+        li.header__list-item
+          a(href='#') О компании
+        li.header__list-item
+          a(href='#') Новости
+        li.header__list-item
+          a(href='#') Цены
+        li.header__list-item
+          a(href='#') Контакты
+      ul.header__list.header__list--phones
+        li.header__list-item.phone-list-msk
+          a.phone-link.msk(href='tel:+74956461076') +7 495 646 10 76
+        li.header__list-item.phone-list-spb
+          a.phone-link.spb(href='tel:+78127482344') +7 812 748 23 44
+      // </div>
+      button.hamburger.hamburger--elastic.js-hamburger(type='button')
+        span.hamburger-box
+          span.hamburger-inner
+    // End "header-nav
+// End header</body></html>

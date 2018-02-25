@@ -1,0 +1,192 @@
+---
+title: Contacts
+bodyClass: homepage
+---
+extends shared/_layout
+
+block content
+
+  // Begin contanct head
+  .contacts-head
+    .container
+      h2.footer-title Контакты
+      p.footer-info
+        | Благодарим за интерес к услугам компании PM-Logistics. Отправьте сообщение и мы свяжемся с вами в ближайшее время.
+      form.footer-form.form-validation(action='#', method='#')
+        .form-grid.form-head--editable
+          .input-container
+            label(for='head-name') Введите ваше имя
+            input#head-name(type='text', name='name', placeholder='Иванов Иван', required='')
+          .input-container
+            label(for='head-mail') Ваша почта
+            input#head-mail(type='mail', name='mail', placeholder='info@info.ru', required='')
+          .input-container.phone-container
+            label(for='head-phone') Ваш телефон
+            input#head-phone(type='text', name='phone', required='')
+          .input-container
+            label(for='head-message') Ваше сообщение
+            input#head-message(type='text', name='mess', placeholder='текст сообшения', required='')
+          .input-container
+            input.button(type='submit', value='оставить заявку')
+          .checkbox-container
+            .box
+              input#file-2.inputfile.inputfile-2(type='file', name='file-2[]', data-multiple-caption='{count} files selected', multiple='')
+              label(for='file-2')
+                span + прикрепить файл
+            label.container-checkbox
+              | Согласен с 
+              a(href='pdf.pdf', target='_blank') политикой конфиденциальности
+              input(type='checkbox', checked='checked', name='personal-info')
+              span.checkmark
+  // End contanct head
+  // Begin wrapper-main
+  .wrapper-main.bg-grey
+    .offices
+      .container
+        .offices__grid
+          .offices__item
+            .offices__head
+              .offices__tab.offices__image.active(style='background-image: url(images/spb.jpg);')
+              .offices__tab.offices__map(style='background-color: #fff;')
+                iframe(src='https://snazzymaps.com/embed/50762', width='100%', height='300px', style='border:none;')
+              .offices__tab-buttons
+                a.offices__button.offices__image-button.active(href='#') фото
+                a.offices__button.offices__map-button(href='#') карта
+            .offices__body
+              h2.offices__title Офис в Москве
+              a.offices__number(href='tel:+74996461076') +7 499 646 10 76
+              p.offices__info-regular ул. 1-й Силикатный проезд д.13 офис 219
+              p.offices__info-light
+                | Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».
+              p.offices__info-light
+                | Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219
+              .offices__mails
+                .offices__mails__item.mobile-hidden
+                  ul
+                    li
+                      p.offices__info-regular отдел продаж
+                    li
+                      p.offices__info-regular общая информация
+                    li
+                      p.offices__info-regular секретариат
+                    li
+                      p.offices__info-regular мониторинг качества
+                .offices__mails__item
+                  ul
+                    li
+                      p.offices__info-regular.desktop-hidden отдел продаж
+                      a(href='mailto:sale@pm-logistics.ru') sale@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden общая информация
+                      a(href='mailto:info@pm-logistics.ru') info@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden секретариат
+                      a(href='mailto:office@pm-logistics.ru') office@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden мониторинг качества
+                      a(href='mailto:msv@pm-logistics.ru') msv@pm-logistics.ru
+          .offices__item
+            .offices__head
+              .offices__tab.offices__image(style='background-image: url(images/spb.jpg);')
+              .offices__tab.offices__map.active(style='background-color: #fff;')
+                iframe(src='https://snazzymaps.com/embed/50761', width='100%', height='300px', style='border:none;')
+              .offices__tab-buttons
+                a.offices__button.offices__image-button(href='#') фото
+                a.offices__button.offices__map-button.active(href='#') карта
+            .offices__body
+              h2.offices__title Офис в Санкт-Петербурге
+              a.offices__number(href='tel:+74996461076') +7 812 748 23 44
+              p.offices__info-regular 197376, г.Санкт-Петербург, дорога на Турухтанные о-ва, д. 10, лит. А, оф. 308Б
+              p.offices__info-light
+                | Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».
+              p.offices__info-light
+                | Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219
+              .offices__mails
+                .offices__mails__item.mobile-hidden
+                  ul
+                    li
+                      p.offices__info-regular отдел продаж
+                    li
+                      p.offices__info-regular общая информация
+                    li
+                      p.offices__info-regular секретариат
+                    li
+                      p.offices__info-regular мониторинг качества
+                .offices__mails__item
+                  ul
+                    li
+                      p.offices__info-regular.desktop-hidden отдел продаж
+                      a(href='mailto:sale@pm-logistics.ru') sale@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden общая информация
+                      a(href='mailto:info@pm-logistics.ru') info@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden секретариат
+                      a(href='mailto:office@pm-logistics.ru') office@pm-logistics.ru
+                    li
+                      p.offices__info-regular.desktop-hidden мониторинг качества
+                      a(href='mailto:msv@pm-logistics.ru') msv@pm-logistics.ru
+    .our-details
+      .container
+        h2.our-details__title Наши реквизиты:
+        .our-details__grid
+          .our-details__item.mobile-hidden
+            ul
+              li.our-details__list-item
+                p.offices__info-regular Полное наименование фирмы
+              li.our-details__list-item
+                p.offices__info-regular Сокращенное наименование организации
+              li.our-details__list-item
+                p.offices__info-regular Юридический и почтовый адрес
+              li.our-details__list-item
+                p.offices__info-regular ИНН/КПП
+              li.our-details__list-item
+                p.offices__info-regular ОГРН
+              li.our-details__list-item
+                p.offices__info-regular Р/С
+              li.our-details__list-item
+                p.offices__info-regular К/С
+            a.button(href='#') скачать реквизиты PDF
+          .our-details__item
+            ul
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden Полное наименование фирмы
+                p.offices__info-light Общество с ограниченной ответственностью «ПМ-Логистикс»
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden Сокращенное наименование организации
+                p.offices__info-light ООО «ПМ-Логистикс»
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden Юридический и почтовый адрес
+                p.offices__info-light РФ, 123060, г. Москва, ул. 1-й Силикатный проезд, дом 13 офис 219
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden ИНН/КПП
+                p.offices__info-light 7734705624/773401001
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden ОГРН
+                p.offices__info-light 1137746695382
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden Р/С
+                p.offices__info-light 40702810302180000102
+              li.our-details__list-item
+                p.offices__info-regular.desktop-hidden К/С
+                p.offices__info-light К/С  30101810200000000593
+            a.button.desktop-hidden(href='#') скачать реквизиты PDF
+  // End wrapper-main
+  footer.footer-editable.bg-grey
+    .container
+      .under-footer
+        .under-footer__left
+          p © 2017 Корпоративные перевозки сотрудников PM-Logistics"
+          a(href='#')
+            img(src='images/fb-icon.png', alt='')
+        .under-footer__right
+          ul
+            li
+              a(href='#') политика конфиденциальности
+            li
+              a(href='#') обработка персональных данных
+            li
+              p
+                | Разработка - 
+                a(href='http://bofer.ru/', target='_blank') Bofer.ru
+  

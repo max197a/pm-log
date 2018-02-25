@@ -1,0 +1,41 @@
+// Begin footer
+footer.footer
+  // Begin footer-nav
+  .footer-nav
+    .container
+      h2.footer-title Сэкономьте 80% своего времени на расчет тарифа
+      p.footer-info
+        | Оставьте заявку на сайте и получите 3 варианта с тарифами. Выберете подходящий тариф, который соответствует Вашим предпочтениям.
+      form.footer-form.form-validation(action='#', method='#')
+        .form-grid
+          .input-container.phone-container
+            label(for='footer-phone') Ваш телефон
+            input#footer-phone(type='text', name='phone', required='')
+          .input-container
+            input.button(type='submit', value='оставить заявку')
+        .box
+          input#file-2.inputfile.inputfile-2(type='file', name='file-2[]', data-multiple-caption='{count} files selected', multiple='')
+          label(for='file-2')
+            span + прикрепить файл
+        label.container-checkbox
+          | Согласен с 
+          a(href='pdf.pdf', target='_blank') политикой конфиденциальности
+          input(type='checkbox', checked='checked', name='personal-info')
+          span.checkmark
+      .under-footer
+        .under-footer__left
+          p © 2017 Корпоративные перевозки сотрудников PM-Logistics"
+          a(href='#')
+            img(src='images/fb-icon.png', alt='')
+        .under-footer__right
+          ul
+            li
+              a(href='#') политика конфиденциальности
+            li
+              a(href='#') обработка персональных данных
+            li
+              p
+                | Разработка - 
+                a(href='http://bofer.ru/', target='_blank') Bofer.ru
+  // End footer-nav
+// End footer

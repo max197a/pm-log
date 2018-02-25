@@ -1,415 +1,387 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]>
-<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]>
-<html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="ru">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <title>Project title</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="" />
-    <meta name="copyright" content="(c)">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="format-detection" content="address=no" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-
-    <meta name=“robots” content=“noindex,nofollow”>
-
-    <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
-    <link rel="stylesheet" href="components/magnific-popup/magnific-popup.css" />
-    <link rel="stylesheet" href="components/slick/slick.css" />
-    <link rel="stylesheet" href="components/slick/slick-theme.css" />
-    <link rel="stylesheet" href="components/animate/animate.css" />
-    <link rel="stylesheet" href="components/hamburgers/hamburgers.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-    <div class="global_wrapper">
-        <!-- Begin header -->
-        <header class="header">
-            <div class="container">
-                <!-- Begin header-nav-->
-                <nav class="header-nav">
-                	<div class="header__mobile-layout"></div>
-                    <img src="images/logotype.png" class="header__logotype" alt="">
-                    <!-- <div class="header__reverse-container"> -->
-                    <ul class="header__list header__list-menu">
-                        <li class="header__list-item">
-                            <a href="#" class="desktop-hidden open-dropdown-menu">
-                                <img src="images/plus-symbol.svg" alt="">
-                            </a>
-                            <a href="#">Заказать автобус</a>
-                            <ul class="header__dropdown-menu">
-                                <li><a href="#">17 мест - минивен</a></li>
-                                <li><a href="#">20 мест - микроавтобус</a></li>
-                                <li><a href="#">35 мест - микроавтобус</a></li>
-                                <li><a href="#">50 мест - микроавтобус</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
-                                <img src="images/plus-symbol.svg" alt="">
-                            </a>
-                            <a href="#">Услуги</a>
-                            <ul class="header__dropdown-menu">
-                                <li><a href="#">Перевозка сотрудников</a></li>
-                                <li><a href="#">Перевозка сотрудников СПБ</a></li>
-                                <li><a href="#">Ночная перевозка сотрудников</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#">О компании</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#">Новости</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#">Цены</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="header__list header__list--phones">
-                        <li class="header__list-item phone-list-msk">
-                            <a class="phone-link msk" href="tel:+74956461076">+7 495 646 10 76</a>
-                        </li>
-                        <li class="header__list-item phone-list-spb">
-                            <a class="phone-link spb" href="tel:+78127482344">+7 812 748 23 44</a>
-                        </li>
-                    </ul>
-                    <!-- </div> -->
-                    <button class="hamburger hamburger--elastic js-hamburger" type="button">
-                        <span class="hamburger-box">
-                	    <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                </nav>
-                <!-- End "header-nav-->
-            </div>
-        </header>
-        <!-- End header
-        <!-- Begin contanct head -->
-        <div class="contacts-head">
-            <div class="container">
-                <h2 class="footer-title">Контакты</h2>
-                <p class="footer-info">Благодарим за интерес к услугам компании PM-Logistics. Отправьте сообщение и мы свяжемся с вами в ближайшее время.</p>
-                <form action="#" method="#" class="footer-form form-validation">
-                    <div class="form-grid form-head--editable">
-                        <div class="input-container">
-                            <label for="head-name">Введите ваше имя</label>
-                            <input type="text" name="name" id="head-name" placeholder="Иванов Иван" required>
-                        </div>
-                        <div class="input-container">
-                            <label for="head-mail">Ваша почта</label>
-                            <input type="mail" name="mail" id="head-mail" placeholder="info@info.ru" required>
-                        </div>
-                        <div class="input-container phone-container">
-                            <label for="head-phone">Ваш телефон</label>
-                            <input type="text" name="phone" id="head-phone" required>
-                        </div>
-                        <div class="input-container">
-                            <label for="head-message">Ваше сообщение</label>
-                            <input type="text" name="mess" placeholder="текст сообшения" id="head-message" required>
-                        </div>
-                        <div class="input-container">
-                            <input type="submit" class="button" value="оставить заявку">
-                        </div>
-                        <div class="checkbox-container">
-                            <div class="box">
-                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file-2"><span>+ прикрепить файл</span></label>
-                            </div>
-                            <label class="container-checkbox">Согласен с <a href="pdf.pdf" target="_blank">политикой конфиденциальности</a>
-                                <input type="checkbox" checked="checked" name="personal-info">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                </form>
-            </div>
+  <head>
+    <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="homepage">
+    <!-- place where pjax bindings happen's-->
+    <div class="global_wrapper" id="barba-wrapper">
+      <!-- Begin header-->
+      <header class="header">
+        <div class="container">
+          <!-- Begin header-nav-->
+          <nav class="header-nav">
+            <div class="header__mobile-layout"></div><img class="header__logotype" src="images/logotype.png" alt="">
+            <!-- <div class="header__reverse-container">-->
+            <ul class="header__list header__list-menu">
+              <li class="header__list-item"><a class="desktop-hidden open-dropdown-menu" href="#"><img src="images/plus-symbol.svg" alt=""></a><a href="#">Заказать автобус</a>
+                <ul class="header__dropdown-menu">
+                  <li><a href="#">17 мест - минивен</a></li>
+                  <li><a href="#">20 мест - микроавтобус</a></li>
+                  <li><a href="#">35 мест - микроавтобус</a></li>
+                  <li><a href="#">50 мест - микроавтобус</a></li>
+                </ul>
+              </li>
+              <li class="header__list-item"><a class="desktop-hidden open-dropdown-menu" id="sec1" href="#"><img src="images/plus-symbol.svg" alt=""></a><a href="#">Услуги</a>
+                <ul class="header__dropdown-menu">
+                  <li><a href="#">Перевозка сотрудников</a></li>
+                  <li><a href="#">Перевозка сотрудников СПБ</a></li>
+                  <li><a href="#">Ночная перевозка сотрудников</a></li>
+                </ul>
+              </li>
+              <li class="header__list-item"><a href="#">О компании</a></li>
+              <li class="header__list-item"><a href="#">Новости</a></li>
+              <li class="header__list-item"><a href="#">Цены</a></li>
+              <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="header__list header__list--phones">
+              <li class="header__list-item phone-list-msk"><a class="phone-link msk" href="tel:+74956461076">+7 495 646 10 76</a></li>
+              <li class="header__list-item phone-list-spb"><a class="phone-link spb" href="tel:+78127482344">+7 812 748 23 44</a></li>
+            </ul>
+            <!-- </div>-->
+            <button class="hamburger hamburger--elastic js-hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </nav>
+          <!-- End "header-nav-->
         </div>
-        <!-- End contanct head -->
-        <!-- Begin wrapper-main -->
-        <div class="wrapper-main bg-grey">
-            <div class="offices">
-                <div class="container">
-                    <div class="offices__grid">
-                        <div class="offices__item">
-                            <div class="offices__head">
-                                <div class="offices__tab offices__image active" style="background-image: url(images/spb.jpg);"></div>
-                                <div class="offices__tab offices__map" style="background-color: #fff;">
-                                    <iframe src="https://snazzymaps.com/embed/50762" width="100%" height="300px" style="border:none;"/></iframe>
-                                </div>
-                                <div class="offices__tab-buttons">
-                                    <a href="#" class="offices__button offices__image-button active">фото</a>
-                                    <a href="#" class="offices__button offices__map-button">карта</a>
-                                </div>
-                            </div>
-                            <div class="offices__body">
-                                <h2 class="offices__title">Офис в Москве</h2>
-                                <a href="tel:+74996461076" class="offices__number">+7 499 646 10 76</a>
-                                <p class="offices__info-regular">ул. 1-й Силикатный проезд д.13 офис 219</p>
-                                <p class="offices__info-light">Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».</p>
-                                <p class="offices__info-light">Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219</p>
-                                <div class="offices__mails">
-                                    <div class="offices__mails__item mobile-hidden">
-                                        <ul>
-                                            <li>
-                                                <p class="offices__info-regular">отдел продаж</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">общая информация</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">секретариат</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">мониторинг качества</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="offices__mails__item">
-                                        <ul>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">отдел продаж</p>
-                                                <a href="mailto:sale@pm-logistics.ru">sale@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">общая информация</p>
-                                                <a href="mailto:info@pm-logistics.ru">info@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">секретариат</p>
-                                                <a href="mailto:office@pm-logistics.ru">office@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">мониторинг качества</p>
-                                                <a href="mailto:msv@pm-logistics.ru">msv@pm-logistics.ru</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offices__item">
-                            <div class="offices__head">
-                                <div class="offices__tab offices__image" style="background-image: url(images/spb.jpg);"></div>
-                                <div class="offices__tab offices__map active" style="background-color: #fff;">
-                                    <iframe src="https://snazzymaps.com/embed/50761" width="100%" height="300px" style="border:none;"/></iframe>
-                                </div>
-                                <div class="offices__tab-buttons">
-                                    <a href="#" class="offices__button offices__image-button">фото</a>
-                                    <a href="#" class="offices__button offices__map-button active">карта</a>
-                                </div>
-                            </div>
-                            <div class="offices__body">
-                                <h2 class="offices__title">Офис в Санкт-Петербурге</h2>
-                                <a href="tel:+74996461076" class="offices__number">+7 812 748 23 44</a>
-                                <p class="offices__info-regular">197376, г.Санкт-Петербург, дорога на Турухтанные о-ва, д. 10, лит. А, оф. 308Б</p>
-                                <p class="offices__info-light">Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».</p>
-                                <p class="offices__info-light">Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219</p>
-                                <div class="offices__mails">
-                                    <div class="offices__mails__item mobile-hidden">
-                                        <ul>
-                                            <li>
-                                                <p class="offices__info-regular">отдел продаж</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">общая информация</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">секретариат</p>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular">мониторинг качества</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="offices__mails__item">
-                                        <ul>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">отдел продаж</p>
-                                                <a href="mailto:sale@pm-logistics.ru">sale@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">общая информация</p>
-                                                <a href="mailto:info@pm-logistics.ru">info@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">секретариат</p>
-                                                <a href="mailto:office@pm-logistics.ru">office@pm-logistics.ru</a>
-                                            </li>
-                                            <li>
-                                                <p class="offices__info-regular desktop-hidden">мониторинг качества</p>
-                                                <a href="mailto:msv@pm-logistics.ru">msv@pm-logistics.ru</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      </header>
+      <!-- End header</body></html>-->
+      <!-- what should be changed with every pjax-->
+      <div class="page">
+        <div class="page__content">
+          <!-- Begin contanct head-->
+          <div class="contacts-head">
+            <div class="container">
+              <h2 class="footer-title">Контакты</h2>
+              <p class="footer-info">Благодарим за интерес к услугам компании PM-Logistics. Отправьте сообщение и мы свяжемся с вами в ближайшее время.</p>
+              <form class="footer-form form-validation" action="#" method="#">
+                <div class="form-grid form-head--editable">
+                  <div class="input-container">
+                    <label for="head-name">Введите ваше имя</label>
+                    <input id="head-name" type="text" name="name" placeholder="Иванов Иван" required="">
+                  </div>
+                  <div class="input-container">
+                    <label for="head-mail">Ваша почта</label>
+                    <input id="head-mail" type="mail" name="mail" placeholder="info@info.ru" required="">
+                  </div>
+                  <div class="input-container phone-container">
+                    <label for="head-phone">Ваш телефон</label>
+                    <input id="head-phone" type="text" name="phone" required="">
+                  </div>
+                  <div class="input-container">
+                    <label for="head-message">Ваше сообщение</label>
+                    <input id="head-message" type="text" name="mess" placeholder="текст сообшения" required="">
+                  </div>
+                  <div class="input-container">
+                    <input class="button" type="submit" value="оставить заявку">
+                  </div>
+                  <div class="checkbox-container">
+                    <div class="box">
+                      <input class="inputfile inputfile-2" id="file-2" type="file" name="file-2[]" data-multiple-caption="{count} files selected" multiple="">
+                      <label for="file-2"><span>+ прикрепить файл</span></label>
                     </div>
+                    <label class="container-checkbox">Согласен с <a href="pdf.pdf" target="_blank">политикой конфиденциальности</a>
+                      <input type="checkbox" checked="checked" name="personal-info"><span class="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
+              </form>
+            </div>
+          </div>
+          <!-- End contanct head-->
+          <!-- Begin wrapper-main-->
+          <div class="wrapper-main bg-grey">
+            <div class="offices">
+              <div class="container">
+                <div class="offices__grid">
+                  <div class="offices__item">
+                    <div class="offices__head">
+                      <div class="offices__tab offices__image active" style="background-image: url(images/spb.jpg);"></div>
+                      <div class="offices__tab offices__map" style="background-color: #fff;">
+                        <iframe src="https://snazzymaps.com/embed/50762" width="100%" height="300px" style="border:none;"></iframe>
+                      </div>
+                      <div class="offices__tab-buttons"><a class="offices__button offices__image-button active" href="#">фото</a><a class="offices__button offices__map-button" href="#">карта</a></div>
+                    </div>
+                    <div class="offices__body">
+                      <h2 class="offices__title">Офис в Москве</h2><a class="offices__number" href="tel:+74996461076">+7 499 646 10 76</a>
+                      <p class="offices__info-regular">ул. 1-й Силикатный проезд д.13 офис 219</p>
+                      <p class="offices__info-light">Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».</p>
+                      <p class="offices__info-light">Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219</p>
+                      <div class="offices__mails">
+                        <div class="offices__mails__item mobile-hidden">
+                          <ul>
+                            <li>
+                              <p class="offices__info-regular">отдел продаж</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">общая информация</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">секретариат</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">мониторинг качества</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="offices__mails__item">
+                          <ul>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">отдел продаж</p><a href="mailto:sale@pm-logistics.ru">sale@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">общая информация</p><a href="mailto:info@pm-logistics.ru">info@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">секретариат</p><a href="mailto:office@pm-logistics.ru">office@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">мониторинг качества</p><a href="mailto:msv@pm-logistics.ru">msv@pm-logistics.ru</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offices__item">
+                    <div class="offices__head">
+                      <div class="offices__tab offices__image" style="background-image: url(images/spb.jpg);"></div>
+                      <div class="offices__tab offices__map active" style="background-color: #fff;">
+                        <iframe src="https://snazzymaps.com/embed/50761" width="100%" height="300px" style="border:none;"></iframe>
+                      </div>
+                      <div class="offices__tab-buttons"><a class="offices__button offices__image-button" href="#">фото</a><a class="offices__button offices__map-button active" href="#">карта</a></div>
+                    </div>
+                    <div class="offices__body">
+                      <h2 class="offices__title">Офис в Санкт-Петербурге</h2><a class="offices__number" href="tel:+74996461076">+7 812 748 23 44</a>
+                      <p class="offices__info-regular">197376, г.Санкт-Петербург, дорога на Турухтанные о-ва, д. 10, лит. А, оф. 308Б</p>
+                      <p class="offices__info-light">Добраться можно общественным транспортом от м. Полежаевская,далее на автобусе 48 или М6 4 остановки до остановки «Силикатный завод».</p>
+                      <p class="offices__info-light">Почтовый адрес офиса: 123060, г. Москва, ул. 1-й Силикатный проезд дом 13 офис 219</p>
+                      <div class="offices__mails">
+                        <div class="offices__mails__item mobile-hidden">
+                          <ul>
+                            <li>
+                              <p class="offices__info-regular">отдел продаж</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">общая информация</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">секретариат</p>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular">мониторинг качества</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="offices__mails__item">
+                          <ul>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">отдел продаж</p><a href="mailto:sale@pm-logistics.ru">sale@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">общая информация</p><a href="mailto:info@pm-logistics.ru">info@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">секретариат</p><a href="mailto:office@pm-logistics.ru">office@pm-logistics.ru</a>
+                            </li>
+                            <li>
+                              <p class="offices__info-regular desktop-hidden">мониторинг качества</p><a href="mailto:msv@pm-logistics.ru">msv@pm-logistics.ru</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="our-details">
-                <div class="container">
-                    <h2 class="our-details__title">Наши реквизиты:</h2>
-                    <div class="our-details__grid">
-                        <div class="our-details__item mobile-hidden">
-                            <ul>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">Полное наименование фирмы</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">Сокращенное наименование организации</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">Юридический и почтовый адрес</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">ИНН/КПП</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">ОГРН</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">Р/С</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular">К/С</p>
-                                </li>
-                            </ul>
-                            <a href="#" class="button">скачать реквизиты PDF</a>
-                        </div>
-                        <div class="our-details__item">
-                            <ul>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">Полное наименование фирмы</p>
-                                    <p class="offices__info-light">Общество с ограниченной ответственностью «ПМ-Логистикс»</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">Сокращенное наименование организации</p>
-                                    <p class="offices__info-light">ООО «ПМ-Логистикс»</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">Юридический и почтовый адрес</p>
-                                    <p class="offices__info-light">РФ, 123060, г. Москва, ул. 1-й Силикатный проезд, дом 13 офис 219</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">ИНН/КПП</p>
-                                    <p class="offices__info-light">7734705624/773401001</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">ОГРН</p>
-                                    <p class="offices__info-light">1137746695382</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">Р/С</p>
-                                    <p class="offices__info-light">40702810302180000102</p>
-                                </li>
-                                <li class="our-details__list-item">
-                                    <p class="offices__info-regular desktop-hidden">К/С</p>
-                                    <p class="offices__info-light">К/С  30101810200000000593</p>
-                                </li>
-                            </ul>
-                            <a href="#" class="button desktop-hidden">скачать реквизиты PDF</a>
-                        </div>
-                    </div>
+              <div class="container">
+                <h2 class="our-details__title">Наши реквизиты:</h2>
+                <div class="our-details__grid">
+                  <div class="our-details__item mobile-hidden">
+                    <ul>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">Полное наименование фирмы</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">Сокращенное наименование организации</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">Юридический и почтовый адрес</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">ИНН/КПП</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">ОГРН</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">Р/С</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular">К/С</p>
+                      </li>
+                    </ul><a class="button" href="#">скачать реквизиты PDF</a>
+                  </div>
+                  <div class="our-details__item">
+                    <ul>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">Полное наименование фирмы</p>
+                        <p class="offices__info-light">Общество с ограниченной ответственностью «ПМ-Логистикс»</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">Сокращенное наименование организации</p>
+                        <p class="offices__info-light">ООО «ПМ-Логистикс»</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">Юридический и почтовый адрес</p>
+                        <p class="offices__info-light">РФ, 123060, г. Москва, ул. 1-й Силикатный проезд, дом 13 офис 219</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">ИНН/КПП</p>
+                        <p class="offices__info-light">7734705624/773401001</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">ОГРН</p>
+                        <p class="offices__info-light">1137746695382</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">Р/С</p>
+                        <p class="offices__info-light">40702810302180000102</p>
+                      </li>
+                      <li class="our-details__list-item">
+                        <p class="offices__info-regular desktop-hidden">К/С</p>
+                        <p class="offices__info-light">К/С  30101810200000000593</p>
+                      </li>
+                    </ul><a class="button desktop-hidden" href="#">скачать реквизиты PDF</a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- End wrapper-main -->
-        <footer class="footer-editable bg-grey">
+          </div>
+          <!-- End wrapper-main-->
+          <footer class="footer-editable bg-grey">
             <div class="container">
-                <div class="under-footer">
-                    <div class="under-footer__left">
-                        <p>© 2017 Корпоративные перевозки сотрудников PM-Logistics"</p>
-                        <a href="#">
-                            <img src="images/fb-icon.png" alt="">
-                        </a>
-                    </div>
-                    <div class="under-footer__right">
-                        <ul>
-                            <li><a href="#">политика конфиденциальности</a></li>
-                            <li><a href="#">обработка персональных данных</a></li>
-                            <li><p>Разработка - <a href="http://bofer.ru/" target="_blank">Bofer.ru</a></p></li>
-                        </ul>
-                    </div>
+              <div class="under-footer">
+                <div class="under-footer__left">
+                  <p>© 2017 Корпоративные перевозки сотрудников PM-Logistics"</p><a href="#"><img src="images/fb-icon.png" alt=""></a>
                 </div>
+                <div class="under-footer__right">
+                  <ul>
+                    <li><a href="#">политика конфиденциальности</a></li>
+                    <li><a href="#">обработка персональных данных</a></li>
+                    <li>
+                      <p>Разработка - <a href="http://bofer.ru/" target="_blank">Bofer.ru</a></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </footer>
-        <div id="application-popup" class="white-popup mfp-hide">
-            <h3>Оставьте заявку</h3>
-            <p>Оставьте заявку на сайте и получите 3 варианта с тарифами. Выберете подходящий тариф, который соответствует Вашим предпочтениям.</p>
-            <form action="send.php" method="post" class="footer-form form-validation">
+          </footer>
+        </div>
+        <!-- Begin footer-->
+        <footer class="footer">
+          <!-- Begin footer-nav-->
+          <div class="footer-nav">
+            <div class="container">
+              <h2 class="footer-title">Сэкономьте 80% своего времени на расчет тарифа</h2>
+              <p class="footer-info">Оставьте заявку на сайте и получите 3 варианта с тарифами. Выберете подходящий тариф, который соответствует Вашим предпочтениям.</p>
+              <form class="footer-form form-validation" action="#" method="#">
                 <div class="form-grid">
-                    <div class="input-container">
-                        <label for="footer-name">Введите ваше имя</label>
-                        <input type="text" name="name" id="footer-name" placeholder="Иванов Иван" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="footer-mail">Ваша почта</label>
-                        <input type="mail" name="mail" id="footer-mail" placeholder="info@info.ru" required>
-                    </div>
-                    <div class="input-container phone-container">
-                        <label for="footer-phone">Ваш телефон</label>
-                        <input type="text" name="phone" id="footer-phone" required>
-                    </div>
-                    <div class="input-container">
-                        <input type="submit" class="button" value="оставить заявку">
-                    </div>
+                  <div class="input-container">
+                    <label for="footer-name">Введите ваше имя</label>
+                    <input id="footer-name" type="text" name="name" placeholder="Иванов Иван" required="">
+                  </div>
+                  <div class="input-container">
+                    <label for="footer-mail">Ваша почта</label>
+                    <input id="footer-mail" type="mail" name="mail" placeholder="info@info.ru" required="">
+                  </div>
+                  <div class="input-container phone-container">
+                    <label for="footer-phone">Ваш телефон</label>
+                    <input id="footer-phone" type="text" name="phone" required="">
+                  </div>
+                  <div class="input-container">
+                    <input class="button" type="submit" value="оставить заявку">
+                  </div>
                 </div>
                 <div class="box">
-                    <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
-                    <label for="file-2"><span>+ прикрепить файл</span></label>
+                  <input class="inputfile inputfile-2" id="file-2" type="file" name="file-2[]" data-multiple-caption="{count} files selected" multiple="">
+                  <label for="file-2"><span>+ прикрепить файл</span></label>
                 </div>
                 <label class="container-checkbox">Согласен с <a href="pdf.pdf" target="_blank">политикой конфиденциальности</a>
-                    <input type="checkbox" checked="checked" name="personal-info">
-                    <span class="checkmark"></span>
+                  <input type="checkbox" checked="checked" name="personal-info"><span class="checkmark"></span>
                 </label>
-            </form>
-        </div>
-        
-        <div id="license-popup" class="white-popup white-popup--editable mfp-hide">
-            <iframe src="license.pdf" frameborder="0"></iframe>
-            <p>Название лицензии</p>
-        </div>
-        
-        <div id="thankPopup" class="thankPopup mfp-hide">
-            <h3>Сообщение
-            <br>
-            успешно отправлено</h3>
-        </div>
+              </form>
+              <div class="under-footer">
+                <div class="under-footer__left">
+                  <p>© 2017 Корпоративные перевозки сотрудников PM-Logistics"</p><a href="#"><img src="images/fb-icon.png" alt=""></a>
+                </div>
+                <div class="under-footer__right">
+                  <ul>
+                    <li><a href="#">политика конфиденциальности</a></li>
+                    <li><a href="#">обработка персональных данных</a></li>
+                    <li>
+                      <p>Разработка - <a href="http://bofer.ru/" target="_blank">Bofer.ru</a></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End footer-nav-->
+        </footer>
+        <!-- End footer-->
+      </div>
+      <div class="white-popup mfp-hide" id="application-popup">
+        <h3>Оставьте заявку</h3>
+        <p>Оставьте заявку на сайте и получите 3 варианта с тарифами. Выберете подходящий тариф, который соответствует Вашим предпочтениям.</p>
+        <form class="footer-form form-validation" action="send.php" method="post">
+          <div class="form-grid">
+            <div class="input-container">
+              <label for="footer-name">Введите ваше имя</label>
+              <input id="footer-name" type="text" name="name" placeholder="Иванов Иван" required="">
+            </div>
+            <div class="input-container">
+              <label for="footer-mail">Ваша почта</label>
+              <input id="footer-mail" type="mail" name="mail" placeholder="info@info.ru" required="">
+            </div>
+            <div class="input-container phone-container">
+              <label for="footer-phone">Ваш телефон</label>
+              <input id="footer-phone" type="text" name="phone" required="">
+            </div>
+            <div class="input-container">
+              <input class="button" type="submit" value="оставить заявку">
+            </div>
+          </div>
+          <div class="box">
+            <input class="inputfile inputfile-2" id="file-2" type="file" name="file-2[]" data-multiple-caption="{count} files selected" multiple="">
+            <label for="file-2"><span>+ прикрепить файл</span></label>
+          </div>
+          <label class="container-checkbox">Согласен с <a href="pdf.pdf" target="_blank">политикой конфиденциальности</a>
+            <input type="checkbox" checked="checked" name="personal-info"><span class="checkmark"></span>
+          </label>
+        </form>
+      </div>
+      <div class="white-popup white-popup--editable mfp-hide" id="license-popup">
+        <iframe src="license.pdf" frameborder="0"></iframe>
+        <p>Название лицензии</p>
+      </div>
+      <div class="thankPopup mfp-hide" id="thankPopup">
+        <h3>Сообщение<br>    успешно отправлено</h3>
+      </div>
+      <script src="js/vendor.js"></script>
+      <script src="js/app.js"></script>
     </div>
-    <!--[if lt IE 9]>
-    <script src="components/html5shiv/es5-shim.min.js"></script>
-    <script src="components/html5shiv/html5shiv.min.js"></script>
-    <script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
-    <script src="components/respond/respond.min.js"></script>
-    <![endif]-->
-    <!-- Load Scripts -->
-    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="components/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
-    <script src="components/validate/jquery.maskedinput.min.js" type="text/javascript"></script>
-    <script src="components/validate/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="components/validate/additional-methods.min.js" type="text/javascript"></script>
-    <script src="components/slick/slick.min.js" type="text/javascript"></script>
-    <script src="assets/js/common.js" type="text/javascript"></script>
-</body>
-
+  </body>
 </html>
