@@ -46,11 +46,12 @@
                 <nav class="header-nav">
                 	<div class="header__mobile-layout"></div>
                     <img src="images/logotype.png" class="header__logotype" alt="">
-                    <ul class="header__list">
+                    <!-- <div class="header__reverse-container"> -->
+                    <ul class="header__list header__list-menu">
                         <li class="header__list-item">
-                        	<a href="#" class="desktop-hidden open-dropdown-menu">
-                        		<img src="images/plus-symbol.svg" alt="">
-                        	</a>
+                            <a href="#" class="desktop-hidden open-dropdown-menu">
+                                <img src="images/plus-symbol.svg" alt="">
+                            </a>
                             <a href="#">Заказать автобус</a>
                             <ul class="header__dropdown-menu">
                                 <li><a href="#">17 мест - минивен</a></li>
@@ -60,9 +61,9 @@
                             </ul>
                         </li>
                         <li class="header__list-item">
-                        	<a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
-                        		<img src="images/plus-symbol.svg" alt="">
-                        	</a>
+                            <a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
+                                <img src="images/plus-symbol.svg" alt="">
+                            </a>
                             <a href="#">Услуги</a>
                             <ul class="header__dropdown-menu">
                                 <li><a href="#">Перевозка сотрудников</a></li>
@@ -82,6 +83,8 @@
                         <li class="header__list-item">
                             <a href="#">Контакты</a>
                         </li>
+                    </ul>
+                    <ul class="header__list header__list--phones">
                         <li class="header__list-item phone-list-msk">
                             <a class="phone-link msk" href="tel:+74956461076">+7 495 646 10 76</a>
                         </li>
@@ -89,6 +92,7 @@
                             <a class="phone-link spb" href="tel:+78127482344">+7 812 748 23 44</a>
                         </li>
                     </ul>
+                    <!-- </div> -->
                     <button class="hamburger hamburger--elastic js-hamburger" type="button">
                         <span class="hamburger-box">
                 	    <span class="hamburger-inner"></span>
@@ -98,7 +102,7 @@
                 <!-- End "header-nav-->
             </div>
         </header>
-        <!-- End header -->
+        <!-- End header
         <!-- Begin wrapper-main -->
         <div class="wrapper-main">
             <div class="news-page">
@@ -108,24 +112,15 @@
                     </div>
                     <div class="bus-grid">
                         <div class="bus-grid__item">
-                            <div class="bus-grid__head bus-head-left">
-                                <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>9</h2>
-                                        <p>единиц</p>
-                                    </div>
+                            <div class="bus-grid__head bus-head-right">
+                                <div class="bus-grid__info-auto">
+                                    <h2>14</h2>
+                                    <p>единиц</p>
                                 </div>
-                                <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>12</h2>
-                                        <p>единиц</p>
-                                    </div>
-                                </div>
-                                <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>14</h2>
-                                        <p>единиц</p>
-                                    </div>
+                                <div class="bus-grid__carousel">
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);"></div>
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);"></div>
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus1.jpg);"></div>
                                 </div>
                             </div>
                             <div class="bus-grid__body bus-body-left">
@@ -160,89 +155,18 @@
                                     </div>
                                     <a href="#" class="button">заказать автобус</a>
                                 </div>
-                                <div class="bus-grid__body-item">
-                                    <h3 class="bus-grid__title">Hyundai Starex 12 мест</h3>
-                                    <p class="bus-grid__sub-title">Минивен Hyundai Starex настоящее решение для доставки небольшого количества сотрудников. Корпоративные перевозки микроавтобусом Hyundai Srarex отличаются повышенной комфортабельностью. Кожанные сиденья, магнитола, климат-контроль.</p>
-                                    <div class="bus-grid__left">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Марка</p>
-                                            </li>
-                                            <li>
-                                                <p>Вместимость</p>
-                                            </li>
-                                            <li>
-                                                <p>Стоимость</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bus-grid__right">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Hyundai Starex</p>
-                                            </li>
-                                            <li>
-                                                <p>12 мест</p>
-                                            </li>
-                                            <li>
-                                                <p>от 1200 руб/день</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="button">заказать автобус</a>
-                                </div>
-                                <div class="bus-grid__body-item">
-                                    <h3 class="bus-grid__title">Hyundai Starex 14 мест</h3>
-                                    <p class="bus-grid__sub-title">Минивен Hyundai Starex настоящее решение для доставки небольшого количества сотрудников. Корпоративные перевозки микроавтобусом Hyundai Srarex отличаются повышенной комфортабельностью. Кожанные сиденья, магнитола, климат-контроль.</p>
-                                    <div class="bus-grid__left">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Марка</p>
-                                            </li>
-                                            <li>
-                                                <p>Вместимость</p>
-                                            </li>
-                                            <li>
-                                                <p>Стоимость</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bus-grid__right">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Hyundai Starex</p>
-                                            </li>
-                                            <li>
-                                                <p>14 мест</p>
-                                            </li>
-                                            <li>
-                                                <p>от 1400 руб/день</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="button">заказать автобус</a>
-                                </div>
                             </div>
                         </div>
                         <div class="bus-grid__item">
                             <div class="bus-grid__head bus-head-right">
-                                <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>9</h2>
-                                        <p>единиц</p>
-                                    </div>
+                                <div class="bus-grid__info-auto">
+                                    <h2>9</h2>
+                                    <p>единиц</p>
                                 </div>
-                                <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>12</h2>
-                                        <p>единиц</p>
-                                    </div>
-                                </div>
-                                <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);">
-                                    <div class="bus-grid__quant">
-                                        <h2>14</h2>
-                                        <p>единиц</p>
-                                    </div>
+                                <div class="bus-grid__carousel">
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);"></div>
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);"></div>
+                                    <div class="bus-grid__auto" style="background-image: url(images/bus2.jpg);"></div>
                                 </div>
                             </div>
                             <div class="bus-grid__body bus-body-right">
@@ -272,68 +196,6 @@
                                             </li>
                                             <li>
                                                 <p>от 900 руб/день</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="button">заказать автобус</a>
-                                </div>
-                                <div class="bus-grid__body-item">
-                                    <h3 class="bus-grid__title">Hyundai Starex 12 мест</h3>
-                                    <p class="bus-grid__sub-title">Минивен Hyundai Starex настоящее решение для доставки небольшого количества сотрудников. Корпоративные перевозки микроавтобусом Hyundai Srarex отличаются повышенной комфортабельностью. Кожанные сиденья, магнитола, климат-контроль.</p>
-                                    <div class="bus-grid__left">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Марка</p>
-                                            </li>
-                                            <li>
-                                                <p>Вместимость</p>
-                                            </li>
-                                            <li>
-                                                <p>Стоимость</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bus-grid__right">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Hyundai Starex</p>
-                                            </li>
-                                            <li>
-                                                <p>12 мест</p>
-                                            </li>
-                                            <li>
-                                                <p>от 1200 руб/день</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="button">заказать автобус</a>
-                                </div>
-                                <div class="bus-grid__body-item">
-                                    <h3 class="bus-grid__title">Hyundai Starex 14 мест</h3>
-                                    <p class="bus-grid__sub-title">Минивен Hyundai Starex настоящее решение для доставки небольшого количества сотрудников. Корпоративные перевозки микроавтобусом Hyundai Srarex отличаются повышенной комфортабельностью. Кожанные сиденья, магнитола, климат-контроль.</p>
-                                    <div class="bus-grid__left">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Марка</p>
-                                            </li>
-                                            <li>
-                                                <p>Вместимость</p>
-                                            </li>
-                                            <li>
-                                                <p>Стоимость</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bus-grid__right">
-                                        <ul class="bus-grid__list">
-                                            <li>
-                                                <p>Hyundai Starex</p>
-                                            </li>
-                                            <li>
-                                                <p>14 мест</p>
-                                            </li>
-                                            <li>
-                                                <p>от 1400 руб/день</p>
                                             </li>
                                         </ul>
                                     </div>

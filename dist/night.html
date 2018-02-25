@@ -45,11 +45,12 @@
             <nav class="header-nav">
             	<div class="header__mobile-layout"></div>
                 <img src="images/logotype.png" class="header__logotype" alt="">
-                <ul class="header__list">
+                <!-- <div class="header__reverse-container"> -->
+                <ul class="header__list header__list-menu">
                     <li class="header__list-item">
-                    	<a href="#" class="desktop-hidden open-dropdown-menu">
-                    		<img src="images/plus-symbol.svg" alt="">
-                    	</a>
+                        <a href="#" class="desktop-hidden open-dropdown-menu">
+                            <img src="images/plus-symbol.svg" alt="">
+                        </a>
                         <a href="#">Заказать автобус</a>
                         <ul class="header__dropdown-menu">
                             <li><a href="#">17 мест - минивен</a></li>
@@ -59,9 +60,9 @@
                         </ul>
                     </li>
                     <li class="header__list-item">
-                    	<a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
-                    		<img src="images/plus-symbol.svg" alt="">
-                    	</a>
+                        <a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
+                            <img src="images/plus-symbol.svg" alt="">
+                        </a>
                         <a href="#">Услуги</a>
                         <ul class="header__dropdown-menu">
                             <li><a href="#">Перевозка сотрудников</a></li>
@@ -81,6 +82,8 @@
                     <li class="header__list-item">
                         <a href="#">Контакты</a>
                     </li>
+                </ul>
+                <ul class="header__list header__list--phones">
                     <li class="header__list-item phone-list-msk">
                         <a class="phone-link msk" href="tel:+74956461076">+7 495 646 10 76</a>
                     </li>
@@ -88,6 +91,7 @@
                         <a class="phone-link spb" href="tel:+78127482344">+7 812 748 23 44</a>
                     </li>
                 </ul>
+                <!-- </div> -->
                 <button class="hamburger hamburger--elastic js-hamburger" type="button">
                     <span class="hamburger-box">
             	    <span class="hamburger-inner"></span>
@@ -97,7 +101,7 @@
             <!-- End "header-nav-->
         </div>
     </header>
-    <!-- End header -->
+    <!-- End header
     <!-- Begin wrapper-main -->
     <div class="head-container head-container--editable night-page">
         <div class="container">
@@ -117,7 +121,7 @@
     	<!-- Begin corporate-transportation -->
     	<div class="corporate-transportation">
     		<div class="container">
-    			<div class="corporate__title">
+    			<div class="corporate__title-container">
     				<h2>Что мы предлагаем:</h2>
     			</div>
     			<div class="corporate__grid">

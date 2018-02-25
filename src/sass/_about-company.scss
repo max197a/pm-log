@@ -20,9 +20,10 @@
 	display: flex;
 	justify-content: space-between;
 }
-.reviews-carousel__item {
+.reviews-carousel {
 	img {
 		width: 95%;
+		height: auto;
 	}
 }
 .question-answer__title {

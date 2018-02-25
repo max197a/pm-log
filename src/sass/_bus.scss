@@ -9,10 +9,18 @@
 	width: 100%;
 	background: #fff;
 }
+
 .slick-initialized .slick-slide.bus-grid__auto {
 	display: flex;
 }
-.bus-grid__quant {
+.bus-grid__head {
+	position: relative;
+}
+.bus-grid__info-auto {
+	position: absolute;
+	z-index: 2;
+	right: 30px;
+	bottom: 30px;
 	h2 {
 		font-size: 60px;
 		color: $green;

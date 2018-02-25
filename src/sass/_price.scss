@@ -14,8 +14,8 @@
 }
 .price__item {
 	max-width: 310px;
-	min-width: 280px;
-	padding: 10px;
+	min-width: 230px;
+	padding: 10px 5px;
 	width: 25%;
 	transition: $ease25;
 	&:hover {
@@ -74,6 +74,9 @@
 		p {
 			color: #000;
 			font-family: $font-regular;
+			white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
 		}
 	}
 }

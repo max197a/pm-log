@@ -42,6 +42,18 @@ $(document).ready(function() {
         mainClass: 'mfp-fade'
     });
 
+    $('.reviews-carousel').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        }
+    });
+
     // END magnific popup
 
     // BEGIN fixed class for header
@@ -102,7 +114,8 @@ $(document).ready(function() {
                     slidesToShow: 2,
                     nav: false,
                     loop: false,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true
                 }
             },
             {
@@ -122,57 +135,17 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        dots: false,
-        asNavFor: '.bus-body-left'
-    });
-    $('.bus-body-left').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.bus-head-left',
-        dots: false,
-        fade: true,
-        draggable: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true
+        dots: false
     });
 
-    $('.bus-head-right').slick({
+    $('.bus-grid__carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        dots: false,
-        asNavFor: '.bus-body-right'
-    });
-    $('.bus-body-right').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.bus-head-right',
-        dots: false,
-        fade: true,
-        draggable: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true
+        dots: false
     });
 
     // END slick-sliders
-
-    // BEGIN count numbers
-
-    $('.stats-grid__number').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 5000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
-    // END count numbers
 
     // BEGIN Button events
 
@@ -183,9 +156,11 @@ $(document).ready(function() {
     $(document).on('click', '.hamburger', function() {
         $(this).toggleClass('is-active');
         $('.header__list').toggleClass('is-open');
+        // $('.header__list-menu').toggleClass('is-open');
     });
 
-    $(document).on('click', '.open-dropdown-menu', function() {
+    $(document).on('click', '.open-dropdown-menu', function(e) {
+        e.preventDefault();
         $(this).toggleClass('is-active');
         $(this).parent().toggleClass('open-menu');
     });
@@ -248,5 +223,28 @@ $(document).ready(function() {
     $("input[name=phone]").mask("(999) 999-99-99");
 
     // END Mask input
+
+});
+
+$(window).load(function() {
+
+    // BEGIN count numbers
+
+    $('.stats-grid__number').each(function() {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).data('number').toString().replace(' ', '')
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function(now) {
+                $(this).text(Math.ceil(now).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+            }
+        });
+    });
+
+    setTimeout(function() {
+        $('.stats-grid__info.animated').addClass('fadeIn');
+    }, 4000)
+    // END count numbers
 
 });

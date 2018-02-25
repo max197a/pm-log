@@ -177,7 +177,7 @@ textarea {
     font-size: 16px;
     display: block;
     text-align: center;
-    padding: 14px 20px;
+    padding: 13px 20px;
     font-family: $font-regular;
     line-height: 1.2;
     border-radius: 5px;
@@ -222,7 +222,7 @@ textarea {
     font-size: 90px;
     font-family: $font-light;
     color: #fff;
-    line-height: 1;
+    line-height: 0.9;
 }
 .head-container--editable {
     .head__title {
@@ -234,8 +234,10 @@ textarea {
     font-family: $font-light;
     font-size: 20px;
     color: #fff;
-    line-height: 1.2;
-    margin-top: 40px;
+    line-height: 1.3;
+    margin-top: 42px;
+    max-width: 450px;
+    letter-spacing: 0.5px;
 }
 .head__grid {
     display: flex;
@@ -250,23 +252,23 @@ textarea {
 }
 .head__grid {
     .button {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 .stats-grid {
-    margin-top: 100px;
+    margin-top: 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 .stats-grid__item {
-    max-width: 250px;
-    width: 24%;
+    max-width: 302px;
+    width: 25%;
     border-top: 1px solid rgba(255,255,255,0.2);
     display: flex;
     align-items: center;
-    padding: 30px 0;
+    padding: 19px 0;
 }
 .stats-grid__number {
     font-family: $font-light;
@@ -278,37 +280,41 @@ textarea {
     font-family: $font-light;
     font-size: 16px;
     color: #ffffff;
-    line-height: 1.1;
-    animation-delay: 5s;
+    line-height: 1.3;
+    // animation-delay: 4s;
+    opacity: 0;
 }
 // END head-container
 
 // BEGIN corporate-transportation
 .corporate-transportation {
-    padding: 110px 0;
+    padding: 110px 0 95px;
     .container {
         display: flex;
         justify-content: space-between;
     }
 }
-.corporate__title {
-    max-width: 380px;
+.corporate__title-container {
+    max-width: 450px;
     width: 100%;
     margin-right: 30px;
+    h2 {
+        max-width: 390px;
+    }
 }
 .corporate__grid {
     display: flex;
     flex-wrap: wrap;
     max-width: 760px;
     justify-content: space-between;
+    margin: 0 -10px;
 }
 .corporate__item {
-    width: 49%;
-    // margin-right: 0.5%;
+    width: 50%;
     display: flex;
     align-items: center;
-    // margin: 0 15px 45px 15px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    padding: 0 15px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -332,8 +338,7 @@ textarea {
 // BEGIN corporate-transportation
 
 .transport__head {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     border-top: 1px solid #eaeaea;
     display: flex;
     justify-content: flex-start;
@@ -349,6 +354,7 @@ textarea {
     max-width: 760px;
     justify-content: space-between;
     align-items: center;
+    margin-left: 35px;
 }
 .transport__item {
     width: 100%;
@@ -413,7 +419,7 @@ textarea {
     }
 }
 .transport__list {
-    margin-top: 60px;
+    margin-top: 65px;
     display: flex;
     justify-content: space-between;
 }
@@ -424,7 +430,7 @@ textarea {
 }
 .transport__list-item {
     width: 25%;
-    min-height: 210px;
+    min-height: 200px;
     padding: 20px;
     border: 1px solid #eaeaea;
     border-right: none;
@@ -473,6 +479,7 @@ textarea {
     position: relative;
     padding: 25px;
     transition: $ease25;
+    // overflow: hidden;
     &:nth-child(even) {
         border-right: 1px solid #eaeaea;
     }
@@ -537,6 +544,16 @@ textarea {
             top: 0;
         }
     }
+    &:hover {
+        overflow: visible;
+        .button {
+            margin-bottom: 0;
+            opacity: 1;
+        }
+        .targets__info {
+            margin-bottom: 50px;
+        }
+    }
 }
 .target__bg-item {
     position: absolute;
@@ -551,11 +568,17 @@ textarea {
     z-index: 2;
     transition: $ease25;
     max-width: 280px;
+    overflow: hidden;
     .button {
         padding: 10px 15px;
         max-height: 40px;
         // margin-top: 10px;
         align-self: flex-end;
+        // margin-bottom: -80px;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: $ease25;
     }
 }
 .targets__number {
@@ -609,43 +632,44 @@ textarea {
 .application-border {
     border: 1px solid #eaeaea;
     // padding-left: 120px;
-    padding: 60px 25px 0;
+    padding: 40px 25px 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: hidden;
+    padding-left: 9%;
     h2 {
-        margin-top: 60px;
+        margin-top: 70px;
     }
     .application__left {
         align-self: flex-end;
         text-align: center;
         img {
-            width: 90%;
+            width: 100%;
             margin-bottom: -4px;
         }
     }
     .application__right {
-        margin-left: 8%;
+        margin-left: 10.5%;
         max-width: 350px; 
         margin-bottom: 30px;
     }
     p {
         font-size: 18px;
         color: $grey;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .application__links {
         display: flex;
         justify-content: flex-start;
-        margin-top: 30px;
+        margin-top: 45px;
         a.google-button,
         a.appstore-button {
             display: block;
             margin-right: 10px;
             background-size: cover;
             img {
-                max-width: 160px;
-                width: 90%;
+                max-width: 163px;
+                width: 100%;
             }
         }
     }
@@ -654,7 +678,7 @@ textarea {
 
 // BEGIN license
 .license {
-    margin: 110px 0;
+    margin: 105px 0 50px;
 }
 .license__grid {
     margin-top: 15px;
@@ -666,7 +690,7 @@ textarea {
 .license__left {
     max-width: 330px;
     width: 80%;
-    margin-right: 4%;
+    margin-right: 6%;
     h3 {
         font-size: 18px;
         color: #000;
@@ -679,7 +703,7 @@ textarea {
             margin-top: 10px;
             a {
                 display: inline;
-                line-height: 1.2;
+                line-height: 1.35;
                 border-bottom: 1px solid transparent;
                 color: $grey;
                 transition: $ease25;
@@ -695,12 +719,14 @@ textarea {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 .license__right-item {
-    width: 47%;
-    margin: 0 1.5% 2.5% 1.5%;
+    width: 50%;
+    // margin: 0 1.5% 2.5% 1.5%;
     display: flex;
-    min-height: 80px;
+    min-height: 112px;
+    padding: 0 15px;
 }
 .license__right-weight-info {
     font-size: 14px;
@@ -837,8 +863,10 @@ textarea {
         margin: 0 auto;
     }
     img {
-        max-height: 150px;
-        max-width: 150px;
+        // max-height: 150px;
+        max-height: 95%;
+        // max-width: 150px;
+        max-width: 95%;
         height: auto;
         width: auto;
     }
@@ -988,6 +1016,12 @@ textarea {
 .mfp-content {
     cursor: url(../../images/cursor.png), auto !important;
 }
+
+.mfp-counter {
+    font-size: 14px;
+    font-family: $font-light-condensed;   
+}
+
 // END customers-carousel
 @import "_news-page";
 @import "_bus";

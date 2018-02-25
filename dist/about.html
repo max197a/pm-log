@@ -45,11 +45,12 @@
             <nav class="header-nav">
             	<div class="header__mobile-layout"></div>
                 <img src="images/logotype.png" class="header__logotype" alt="">
-                <ul class="header__list">
+                <!-- <div class="header__reverse-container"> -->
+                <ul class="header__list header__list-menu">
                     <li class="header__list-item">
-                    	<a href="#" class="desktop-hidden open-dropdown-menu">
-                    		<img src="images/plus-symbol.svg" alt="">
-                    	</a>
+                        <a href="#" class="desktop-hidden open-dropdown-menu">
+                            <img src="images/plus-symbol.svg" alt="">
+                        </a>
                         <a href="#">Заказать автобус</a>
                         <ul class="header__dropdown-menu">
                             <li><a href="#">17 мест - минивен</a></li>
@@ -59,9 +60,9 @@
                         </ul>
                     </li>
                     <li class="header__list-item">
-                    	<a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
-                    		<img src="images/plus-symbol.svg" alt="">
-                    	</a>
+                        <a href="#" class="desktop-hidden open-dropdown-menu" id="sec1">
+                            <img src="images/plus-symbol.svg" alt="">
+                        </a>
                         <a href="#">Услуги</a>
                         <ul class="header__dropdown-menu">
                             <li><a href="#">Перевозка сотрудников</a></li>
@@ -81,6 +82,8 @@
                     <li class="header__list-item">
                         <a href="#">Контакты</a>
                     </li>
+                </ul>
+                <ul class="header__list header__list--phones">
                     <li class="header__list-item phone-list-msk">
                         <a class="phone-link msk" href="tel:+74956461076">+7 495 646 10 76</a>
                     </li>
@@ -88,6 +91,7 @@
                         <a class="phone-link spb" href="tel:+78127482344">+7 812 748 23 44</a>
                     </li>
                 </ul>
+                <!-- </div> -->
                 <button class="hamburger hamburger--elastic js-hamburger" type="button">
                     <span class="hamburger-box">
             	    <span class="hamburger-inner"></span>
@@ -97,7 +101,7 @@
             <!-- End "header-nav-->
         </div>
     </header>
-    <!-- End header -->
+    <!-- End header
     <!-- Begin wrapper-main -->
     <div class="head-container head-container--editable about-company">
         <div class="container">
@@ -119,31 +123,31 @@
             <div class="container">
                 <h2>Отзывы</h2>
                 <div class="reviews-carousel">
-                    <div class="reviews-carousel__item">
-                        <a href="#" class="open-popup">
+                    <!-- <div class="reviews-carousel__item"> -->
+                        <a href="images/review-1.jpg">
                             <img src="images/review-1.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="reviews-carousel__item">
-                        <a href="#" class="open-popup">
+                    <!-- </div> -->
+                    <!-- <div class="reviews-carousel__item"> -->
+                        <a href="images/review-2.jpg">
+                            <img src="images/review-2.jpg" alt="">
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="reviews-carousel__item"> -->
+                        <a href="images/review-3.jpg">
+                            <img src="images/review-3.jpg" alt="">
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="reviews-carousel__item"> -->
+                        <a href="images/review-4.jpg">
+                            <img src="images/review-4.jpg" alt="">
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="reviews-carousel__item"> -->
+                        <a href="images/review-1.jpg">
                             <img src="images/review-1.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="reviews-carousel__item">
-                        <a href="#" class="open-popup">
-                            <img src="images/review-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="reviews-carousel__item">
-                        <a href="#" class="open-popup">
-                            <img src="images/review-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="reviews-carousel__item">
-                        <a href="#" class="open-popup">
-                            <img src="images/review-1.jpg" alt="">
-                        </a>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -219,46 +223,61 @@
                     <div class="license__right">
                         <div class="license__right-item">
                             <div class="license__right-image">
-                                <img src="images/icons/doc-file.svg" alt="">
+                                <!-- <img src="images/icons/doc-file.svg" alt=""> -->
+                                <div class="license-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.9" height="38.6"><style>.st0{fill:#5ab947}</style><g id="Слой_4_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z" id="Слой_3_1_"/></g><g id="Слой_2_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z"/><text transform="translate(3.617 22.95)" font-size="12" font-family="MyriadPro-Regular" fill="#fff">JPG</text></g></svg>
+                                </div>
                             </div>
                             <div class="license__right-info">
-                                <a href="#" class="license__right-link">Лицензия на осуществление деятельности по перевозке пассажиров</a>
+                                <a href="#license-popup" class="open-popup-link license__right-link">Лицензия на осуществление деятельности по перевозке пассажиров</a>
                                 <p class="license__right-weight-info">234 кб</p>
                             </div>
                         </div>
                         <div class="license__right-item">
                             <div class="license__right-image">
-                                <img src="images/icons/doc-file.svg" alt="">
+                                <!-- <img src="images/icons/doc-file.svg" alt=""> -->
+                                <div class="license-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.9" height="38.6"><style>.st0{fill:#5ab947}</style><g id="Слой_4_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z" id="Слой_3_1_"/></g><g id="Слой_2_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z"/><text transform="translate(3.617 22.95)" font-size="12" font-family="MyriadPro-Regular" fill="#fff">JPG</text></g></svg>
+                                </div>
                             </div>
                             <div class="license__right-info">
-                                <a href="#" class="license__right-link">Система менеджмента качества сертифицирована по стандарту ISO 9001</a>
+                                <a href="#license-popup" class="open-popup-link license__right-link">Система менеджмента качества сертифицирована по стандарту ISO 9001</a>
                                 <p class="license__right-weight-info">234 кб</p>
                             </div>
                         </div>
                         <div class="license__right-item">
                             <div class="license__right-image">
-                                <img src="images/icons/doc-file.svg" alt="">
+                                <!-- <img src="images/icons/doc-file.svg" alt=""> -->
+                                <div class="license-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.9" height="38.6"><style>.st0{fill:#5ab947}</style><g id="Слой_4_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z" id="Слой_3_1_"/></g><g id="Слой_2_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z"/><text transform="translate(3.617 22.95)" font-size="12" font-family="MyriadPro-Regular" fill="#fff">JPG</text></g></svg>
+                                </div>
                             </div>
                             <div class="license__right-info">
-                                <a href="#" class="license__right-link">Проверки надзорных органов перед Эстафетой Олимпийского огня не выявили нарушений</a>
+                                <a href="#license-popup" class="open-popup-link license__right-link">Проверки надзорных органов перед Эстафетой Олимпийского огня не выявили нарушений</a>
                                 <p class="license__right-weight-info">234 кб</p>
                             </div>
                         </div>
                         <div class="license__right-item">
                             <div class="license__right-image">
-                                <img src="images/icons/doc-file.svg" alt="">
+                                <!-- <img src="images/icons/doc-file.svg" alt=""> -->
+                                <div class="license-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.9" height="38.6"><style>.st0{fill:#5ab947}</style><g id="Слой_4_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z" id="Слой_3_1_"/></g><g id="Слой_2_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z"/><text transform="translate(3.617 22.95)" font-size="12" font-family="MyriadPro-Regular" fill="#fff">JPG</text></g></svg>
+                                </div>
                             </div>
                             <div class="license__right-info">
-                                <a href="#" class="license__right-link">Грамота к памятной медали от президента Российской Федерации В. Путина</a>
+                                <a href="#license-popup" class="open-popup-link license__right-link">Грамота к памятной медали от президента Российской Федерации В. Путина</a>
                                 <p class="license__right-weight-info">234 кб</p>
                             </div>
                         </div>
                         <div class="license__right-item">
                             <div class="license__right-image">
-                                <img src="images/icons/doc-file.svg" alt="">
+                                <!-- <img src="images/icons/doc-file.svg" alt=""> -->
+                                <div class="license-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.9" height="38.6"><style>.st0{fill:#5ab947}</style><g id="Слой_4_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z" id="Слой_3_1_"/></g><g id="Слой_2_1_"><path class="st0" d="M6.4 26.4H3.6c-2.1 0-3.6-1.5-3.6-3.6v-7.6c0-2.2 1.5-3.7 3.7-3.7h2.7v-.4-7.4c0-1.6.9-2.9 2.4-3.4.4-.2.8-.3 1.2-.3h13.7c.1 0 .3.1.4.2l10.6 10.6c.1.1.2.3.2.5V35c0 2-1.6 3.6-3.6 3.6H9.9c-2 0-3.6-1.5-3.6-3.6v-8.1c.1-.2.1-.4.1-.5zm1.4-15H20.5c.4 0 .7 0 1.1.1 1.5.4 2.6 1.8 2.6 3.4v7.5c0 .5 0 1.1-.2 1.6-.5 1.5-1.8 2.4-3.5 2.4H7.8v8.4c0 1.5.9 2.3 2.3 2.3h21.1c1.3 0 2.2-.9 2.2-2.2v-2-20.4-.4H26.3c-2.1 0-3.6-1.6-3.6-3.6V1.8v-.4H10.1c-1.4 0-2.3.9-2.3 2.3v7.7zm24.7-.7l-8.3-8.3v6.1c0 1.3.9 2.1 2.2 2.2h6.1z"/><text transform="translate(3.617 22.95)" font-size="12" font-family="MyriadPro-Regular" fill="#fff">JPG</text></g></svg>
+                                </div>
                             </div>
                             <div class="license__right-info">
-                                <a href="#" class="license__right-link">Лицензия на осуществление деятельности по перевозке пассажиров</a>
+                                <a href="#license-popup" class="open-popup-link license__right-link">Лицензия на осуществление деятельности по перевозке пассажиров</a>
                                 <p class="license__right-weight-info">234 кб</p>
                             </div>
                         </div>
