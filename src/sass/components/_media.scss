@@ -31,6 +31,15 @@
     .form-grid {
         flex-wrap: wrap;
     }
+    .form-head--editable {
+    	.input-container {
+    	    input[type=text],
+    	    input[type=mail] {
+    	    	width: 98%;
+    	    	max-width: 100%;
+    	    }
+    	}	
+    }
     .input-container {
         width: 50%; // max-width: 240px;
     }
@@ -1340,6 +1349,15 @@
         margin-top: 10px;
         max-width: 400px;
         margin: 0 auto;
+    }
+    .form-head--editable {
+    	.input-container {
+    	    input[type=text],
+    	    input[type=mail] {
+    	    	width: 100%;
+    	    	max-width: 100%;
+    	    }
+    	}	
     }
     label {
         font-size: 12px;
