@@ -5,9 +5,13 @@
 }
 .head-container.order-bus-page {
 	background: url(../../images/bg-order-bus.jpg) center center no-repeat;
+	background-size: cover;
 }
 .main__right {
 	padding-left: 60px;
+	.head__info {
+		max-width: 100%;
+	}
 }
 .head__sub-title {
 	font-family: $font-light;

@@ -38,7 +38,7 @@
 	overflow: visible;
 }
 .header__list--phones {
-	max-width: 310px;
+	max-width: 320px;
 	margin-top: 3px;
 	li {
 		margin: 0;
@@ -125,7 +125,7 @@
 .open-dropdown-menu {
 	display: none;
 }
-.dark-header--editable {
+.header-dark--editable {
 	.header__logotype {
 		filter: hue-rotate(190deg) saturate(165%) contrast(216%) invert(100%);
 		transition: $ease25;
@@ -147,7 +147,7 @@
 			transition: $ease25;
 		}
 	}
-	header.fixed {
+	&.fixed {
 		.header__logotype {
 			filter: none;
 			transition: $ease25;

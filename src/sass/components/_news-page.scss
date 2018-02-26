@@ -42,7 +42,7 @@
     &:nth-child(odd) {
         border-right: none;
     }
-    &:nth-child(n+2) {
+    &:nth-child(n+3) {
         border-top: none;
     }
 }
@@ -153,10 +153,11 @@
 		color: $grey;
 		font-family: $font-light;
 	}
-	p.p-title {
+	h3 {
 		font-size: 20px;
 		font-family: $font-regular;
-		margin-bottom: -20px;
+		// margin-bottom: -20px;
+        margin-top: 20px;
 	}
 	li {
 		p {

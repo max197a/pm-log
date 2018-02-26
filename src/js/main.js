@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+
+
+
+    if ( $('.news-page').hasClass("edit-header") ) {
+        $('header').addClass('header-dark--editable');
+    }
+
   //////////
   // Global variables
   //////////
@@ -198,7 +205,7 @@ $(document).ready(function(){
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             nav: false,
             loop: false,
@@ -255,11 +262,11 @@ $(document).ready(function(){
       mainClass: 'mfp-fade'
     });
 
+    
+
     $('.reviews-carousel').magnificPopup({
       delegate: 'a',
       type: 'image',
-      tLoading: 'Loading image #%curr%...',
-      mainClass: 'mfp-img-mobile',
       gallery: {
         enabled: true,
         navigateByImgClick: true,
