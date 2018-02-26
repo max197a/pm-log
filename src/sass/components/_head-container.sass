@@ -1,0 +1,176 @@
+// BEGIN head-container
+.head-container
+  background: url(../../images/bg-head.jpg) center center no-repeat
+  background-size: cover
+  padding: 190px 0 30px
+
+.head-container.head-container--editable 
+  padding: 190px 0 190px
+  background-size: cover
+
+.head__title
+  font-size: 90px
+  font-family: $font-light
+  color: #fff
+  line-height: 0.9
+
+.head-container--editable
+  .head__title
+    width: 110%
+    font-size: 75px
+
+.head__info
+  font-family: $font-light
+  font-size: 20px
+  color: #fff
+  line-height: 1.3
+  margin-top: 42px
+  max-width: 450px
+  letter-spacing: 0.5px
+
+.head__grid
+  display: flex
+  justify-content: space-between
+
+.head__right,
+.head__left
+  width: 50%
+
+.head__left
+  max-width: 616px
+
+.head__grid
+  .button
+    margin-top: 30px
+
+.stats-grid
+  margin-top: 128px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.stats-grid__item
+  max-width: 312px
+  width: 25%
+  border-top: 1px solid rgba(255, 255, 255, 0.2)
+  display: flex
+  align-items: center
+  padding: 19px 0
+
+.stats-grid__number
+  font-family: $font-light
+  font-size: 39px
+  color: $green
+  margin-right: 20px
+
+.stats-grid__info
+  font-family: $font-light
+  font-size: 16px
+  color: #ffffff
+  line-height: 1.3
+  opacity: 0
+.main__right
+  padding-left: 60px
+
+@media screen and (max-width: 1240px)
+  .form-grid.form-head--editable
+    .input-container
+      margin-right: 10px
+@media screen and (max-width: 1024px) 
+  .head-container
+    padding: 100px 0
+  .head-container.head-container--editable
+      padding: 100px 0
+  .head__sub-title
+      font-size: 28px
+  .head__sub-info
+      font-size: 18px
+  .form-grid
+      flex-wrap: wrap
+  .form-head--editable
+    .input-container
+        input[type=text],
+        input[type=mail]
+          width: 98%
+          max-width: 100% 
+  .input-container
+      width: 50%
+  .stats-grid__item
+      width: 49.5%
+      max-width: 350px
+
+  .head__grid
+    flex-wrap: wrap
+  .head__left
+    width: 100%
+    max-width: 100%
+  .main__right
+    padding-left: 0
+    margin-top: 30px
+@media screen and (max-width: 768px)
+  .head-container
+      padding: 140px 0 15px
+      position: relative
+      &:before
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          display: block
+          content: ''
+          background: rgba(43, 50, 61, 0.7)
+      .container
+          z-index: 2
+          position: relative
+  .head__title
+      font-size: 32px
+  .head-container--editable
+      .head__title
+          width: 100%
+          font-size: 32px
+  .head__info
+      font-size: 14px
+  .head__grid
+      flex-wrap: wrap
+      .button
+          margin-top: 40px
+  .head__right,
+  .head__left
+      width: 100%
+  .stats-grid
+      margin-top: 60px
+  .stats-grid__item
+      padding: 15px 0
+  .stats-grid__number
+      font-size: 24px
+      margin-right: 5px
+  .stats-grid__info
+      font-size: 12px
+  .head-container.head-container--editable
+      padding: 100px 0 50px
+      .head__info
+          margin-top: 20px
+  .head__sub-title
+      font-size: 20px
+  .head__sub-info
+      font-size: 14px
+  .form-head--editable
+    .input-container
+        input[type=text],
+        input[type=mail]
+          width: 100%
+          max-width: 100%
+  .head-container.head-container--editable
+      .button
+          margin-top: 20px
+      .head__title-grid
+          img
+              width: 30px
+              height: auto
+              margin-right: 10px
+          .head__info
+              margin-top: 0
+
+// END head-container

@@ -1,0 +1,216 @@
+// BEGIN transport for 
+
+.transport__head
+  padding: 60px 0
+  border-top: 1px solid #eaeaea
+  display: flex
+  justify-content: flex-start
+
+.transport__title
+  max-width: 425px
+  width: 100%
+  margin-right: 30px
+
+.transport__grid
+  display: flex
+  flex-wrap: wrap
+  max-width: 760px
+  justify-content: space-between
+  align-items: center
+  margin-left: 35px
+
+.transport__item
+  width: 100%
+  display: flex
+  align-items: center
+
+.transport__number
+  font-family: $font-light-condensed
+  font-size: 72px
+  color: $green
+  margin-right: 20px
+
+.transport__info
+  font-family: $font-light
+  font-size: 18px
+  color: $grey
+  line-height: 1.1
+
+.transport__carousel .slick-slide
+  display: flex
+
+.transport__carousel
+  .slick-arrow
+    display: none
+
+.transport__item
+  display: flex
+  padding: 25px
+  min-height: 280px
+  align-items: flex-end
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  flex-wrap: wrap
+  overflow: hidden
+  h3
+    font-family: $font-light
+    color: #fff
+    font-size: 18px
+    width: 100%
+    align-self: flex-end
+  p
+    font-family: $font-light
+    color: $light-grey
+    font-size: 14px
+    margin-top: 10px
+    width: 100%
+  .button
+    max-width: 155px
+    margin-top: 15px
+    padding: 10px 15px
+    transition: $ease25
+    margin-bottom: -67px
+  &:hover
+    .button
+      margin-bottom: 0
+
+.transport__list
+  margin-top: 65px
+  display: flex
+  justify-content: space-between
+
+.transport__list-image
+  max-height: 45px
+  height: 100%
+  margin-bottom: 10px
+  .ico
+    color: $green
+    font-size: 50px
+    &.ico-comp
+      font-size: 40px
+    &.ico-iso
+      font-size: 40px
+
+
+.transport__list-item
+  width: 25%
+  min-height: 200px
+  padding: 20px
+  border: 1px solid #eaeaea
+  border-right: none
+  &:last-child
+    border-right: 1px solid #eaeaea
+  p
+    font-size: 18px
+    font-family: $font-light
+    color: $grey
+    line-height: 1.2
+    a
+      color: $grey
+      font-family: $font-regular
+
+@media screen and (max-width: 1024px)
+  .transport__list-item
+      padding: 15px
+      p
+          font-size: 16px
+  .transport__carousel
+      .slick-slide
+          display: flex
+          align-items: flex-end
+      .slick-arrow
+          display: none !important
+      .slick-list
+          overflow: visible
+      .slick-dots
+          bottom: -40px
+      .slick-dots li button
+          width: 10px
+          height: 10px
+          background: #dddddd
+          border-radius: 50%
+          margin: 0 5px
+          padding: 0
+          &:before
+              font-size: 0
+              width: 0
+              height: 0
+              display: none
+      .slick-dots li.slick-active
+          button
+              background: #5ab947
+@media screen and (max-width: 768px)
+  .transport__list
+      flex-wrap: wrap
+  .transport__list-item
+      width: 50%
+      min-height: 150px
+      padding: 15px
+      border-top: none
+      &:nth-child(even)
+          border-right: 1px solid #eaeaea
+      &:nth-child(1),
+      &:nth-child(2)
+          border-top: 1px solid #eaeaea
+      p
+          font-size: 14px
+          font-family: $font-light
+          a
+              font-size: 14px 
+  .transport__head
+      padding-top: 30px
+      padding-bottom: 30px
+      flex-wrap: wrap
+  .transport__title
+      max-width: 100%
+      margin-right: 0
+  .transport__grid
+      flex-wrap: wrap
+      max-width: 100%
+      margin-top: 30px
+  .transport__number
+      font-size: 24px
+      margin-right: 10px
+  .transport__info
+      font-size: 14px
+  .slick-dotted.slick-slider
+      margin-bottom: 50px
+  .transport__item
+      padding: 20px
+      min-height: 250px
+      h3
+          font-size: 16px
+      p
+          font-size: 14px
+          margin-top: 8px
+      .button
+          margin-top: 20px
+          padding: 10px 15px
+          margin-bottom: -60px
+      &:hover
+          .button
+              margin-bottom: 0
+  .transport__list.transport__list-how-we-work--editable
+      margin-top: 25px
+      .transport__list-item
+          padding: 0
+          width: 49%
+          margin: 5px 0
+          min-height: 0
+      .how-we-work__number
+          font-size: 28px
+          margin-bottom: 15px
+      .transport__list-image
+          max-height: 45px
+          height: 100%
+          margin-bottom: 10px
+          min-height: 40px
+          .ico
+              color: #fff
+              font-size: 40px
+              &.ico-hands
+                  font-size: 35px
+              &.ico-an-bus
+                  font-size: 35px
+// END transport for 

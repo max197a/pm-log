@@ -254,19 +254,38 @@ $(document).ready(function(){
   // MODALS
   //////////
 
+
   function initPopups(){
     $('.open-popup-link').magnificPopup({
       type: 'inline',
       midClick: true,
       removalDelay: 300,
-      mainClass: 'mfp-fade'
+      mainClass: 'mfp-fade',
+      callbacks: {
+        beforeOpen: function() {
+           this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
     });
 
-    
+
 
     $('.reviews-carousel').magnificPopup({
-      delegate: 'a',
       type: 'image',
+      // items: [
+      //       {
+      //         src: '../images/review-1.jpg'
+      //       },
+      //       {
+      //         src: '../images/review-2.jpg',
+      //       },
+      //       {
+      //         src: '../images/review-3.jpg',
+      //       },
+      //       {
+      //         src: '../images/review-4.jpg',
+      //       }
+      //     ],
       gallery: {
         enabled: true,
         navigateByImgClick: true,
@@ -451,7 +470,6 @@ $(document).ready(function(){
         .all([this.newContainerLoading, this.fadeOut()])
         .then(this.fadeIn.bind(this));
     },
-
     fadeOut: function() {
       var deferred = Barba.Utils.deferred();
 
@@ -513,7 +531,6 @@ $(document).ready(function(){
     closeMobileMenu();
 
   });
-
   // some plugins get bindings onNewPage only that way
   function triggerBody(){
     $(window).scroll();

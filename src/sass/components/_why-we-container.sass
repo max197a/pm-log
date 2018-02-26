@@ -1,0 +1,60 @@
+// BEGIN why-we
+.why-we
+  padding: 60px 0
+
+.why-we__grid
+  display: flex
+  justify-content: space-between
+
+.why-we__left
+  max-width: 425px
+  width: 100%
+  margin-right: 30px
+
+.why-we__right
+  flex-wrap: wrap
+  max-width: 760px
+
+.why-we__info
+  line-height: 1.35
+  font-size: 18px
+  font-family: $font-light
+  color: $grey
+
+@media screen and (max-width: 1024px)
+  .why-we__title
+      br
+          display: none
+
+  .why-we__grid
+      flex-wrap: wrap
+      .why-we__right
+          margin-top: 15px
+          max-width: 100%
+@media screen and (max-width: 768px)
+  .why-we
+      padding: 30px 0
+  .why-we__grid
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+  .why-we__left
+      max-width: 100%
+      width: 100%
+      margin-right: 0
+  .why-we__right
+      flex-wrap: wrap
+      max-width: 100%
+      width: 100%
+      margin-top: 15px
+  .why-we__info
+      line-height: 1.35
+      font-size: 14px
+  .why-we__right-item
+      margin-top: 15px
+  .why-we__number
+      font-size: 28px
+      min-width: 35px
+
+// END why-we
+

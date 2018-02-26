@@ -1,0 +1,206 @@
+// BEGIN contacts-page
+.contacts-head
+	background: url(../../images/bg-contacts.jpg) center center no-repeat
+	background-size: cover
+.form-head--editable
+	flex-wrap: wrap
+	.input-container
+		max-width: 100%
+		margin-right: 0
+.checkbox-container
+	width: 100%
+.footer-editable
+	.under-footer__left
+		p
+			color: #000
+		a
+			color: #000
+			&:hover
+				color: $green
+	.under-footer__right
+		ul
+			li
+				a
+					color: #000
+					border-color: #000
+				p
+					color: #000
+	.under-footer
+		border-top: 1px solid #eaeaea
+.offices
+	margin-top: 60px
+	.desktop-hidden
+		display: none
+.offices__grid
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.offices__item
+	width: 49%
+	background: #fff
+.offices__tab
+	min-height: 300px
+	display: none
+	height: 300px
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+.offices__tab.active
+	display: block
+.offices__tab-buttons
+	margin: 25px auto
+	max-width: 210px
+	width: 100%
+	border-radius: 5px
+	overflow: hidden
+	display: flex
+	justify-content: space-between
+	background: #f2f2f2
+.offices__button
+	background: #f2f2f2
+	color: $grey
+	padding: 10px
+	text-align: center
+	width: 50%
+	display: block
+	text-transform: uppercase
+	font-size: 16px
+	font-family: $font-regular
+	border-radius: 5px
+	transition: $ease25
+	&.active
+		background: $green
+		color: #fff
+.offices__body
+	padding: 0px 4.5% 60px
+.offices__title
+	font-size: 35px
+	color: $grey
+.offices__number
+	font-size: 30px
+	color: #000
+	display: block
+	margin: 20px auto
+	line-height: 1
+.offices__info-regular
+	font-size: 18px
+	color: $grey
+	line-height: 1.4
+	font-family: $font-regular
+.offices__info-light
+	font-size: 18px
+	color: $grey
+	line-height: 1.4
+	font-family: $font-light
+	margin-top: 20px
+.offices__mails
+	display: flex
+	justify-content: space-between
+.offices__mails__item
+	width: 48%
+	margin-top: 20px
+	ul
+		li
+			padding: 10px 0
+			font-size: 0
+			margin: 0
+			border-top: 1px solid #cecece
+			&:last-child
+				border-bottom: 1px solid #cecece
+			a
+				font-size: 18px
+				color: $green
+				line-height: 1.4
+				font-family: $font-regular
+.our-details
+	margin-bottom: 60px
+	.desktop-hidden
+		display: none
+.our-details__title
+	margin: 60px 0
+.our-details__grid
+	display: flex
+	justify-content: flex-start
+.our-details__item
+	width: auto
+	margin-right: 20px
+	.button
+		max-width: 100%
+		margin-top: 10px
+.our-details__list-item
+	padding: 10px 0
+	font-size: 0
+	margin: 0
+	border-top: 1px solid #cecece
+	&:last-child
+		border-bottom: 1px solid #cecece
+	.offices__info-light
+		margin-top: 0
+@media screen and (max-width: 1024px)
+	.offices
+	    margin-top: 45px
+	.our-details
+	    margin-bottom: 45px
+	.our-details__title
+	    margin: 45px 0
+	.offices__title
+	    font-size: 30px
+	.offices__number
+	    font-size: 25px
+	.offices__info-regular
+	    font-size: 16px
+	.offices__mails__item
+		ul
+			li
+				a
+					font-size: 16px
+	.offices__info-light
+	    font-size: 16px
+@media screen and (max-width: 768px)
+	.offices__grid
+		margin: 0 -15px
+	.offices
+	    margin-top: 30px
+	    .desktop-hidden
+	        display: block
+	.our-details
+	    margin-bottom: 30px
+	    .desktop-hidden
+	        display: block
+	.offices__item
+	    width: 100%
+	    &:last-child
+	        margin-top: 30px
+	.offices__tab-buttons
+	    margin: 15px auto
+	.our-details__title
+	    margin: 30px 0
+	.offices__tab
+	    min-height: 200px
+	.offices__mails__item
+	    margin-top: 15px
+	    width: 100%
+	    ul
+	        li
+	            padding: 7px 0
+	            a
+	                font-size: 14px
+	.offices__title
+	    font-size: 18px
+	.offices__number
+	    font-size: 18px
+	    margin: 10px auto
+	.offices__info-regular
+	    font-size: 14px
+	.offices__info-light
+	    font-size: 14px
+	    margin-top: 10px
+	.offices__body
+	    padding: 0px 15px 30px
+	.our-details__item
+	    width: 100%
+	    margin-right: 0
+	    .button
+	        max-width: 260px
+
+// END contacts-page

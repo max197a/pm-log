@@ -59,7 +59,7 @@ $(document).ready(function(){
   /////////////////////
   // REGISTRATION FORM
   ////////////////////
-  $(".js-registration-form").validate({
+  $(".form-validation").validate({
     errorPlacement: validateErrorPlacement,
     highlight: validateHighlight,
     unhighlight: validateUnhighlight,
@@ -88,10 +88,10 @@ $(document).ready(function(){
           required: "Заполните это поле",
           email: "Пароль мимимум 6 символов"
       },
-      // phone: {
-      //     required: "Заполните это поле",
-      //     minlength: "Введите корректный телефон"
-      // }
+      phone: {
+          required: "Заполните это поле",
+          minlength: "Введите корректный телефон"
+      }
     }
   });
 

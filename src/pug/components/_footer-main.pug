@@ -19,20 +19,21 @@ footer.footer
             span + прикрепить файл
         label.container-checkbox
           | Согласен с 
-          a(href='pdf.pdf', target='_blank') политикой конфиденциальности
+          a.open-politic(href='#politic') политикой конфиденциальности
           input(type='checkbox', checked='checked', name='personal-info')
           span.checkmark
       .under-footer
         .under-footer__left
           p © 2017 Корпоративные перевозки сотрудников PM-Logistics"
-          a(href='#')
-            img(src='images/fb-icon.png', alt='')
+          a(href='#') 
+            +icon('ico-fb')
+            //- img(src='images/fb-icon.png', alt='')
         .under-footer__right
           ul
             li
-              a(href='#') политика конфиденциальности
+              a.open-popup-link(href='#politic') политика конфиденциальности
             li
-              a(href='#') обработка персональных данных
+              a.open-popup-link(href='#politic') обработка персональных данных
             li
               p
                 | Разработка - 

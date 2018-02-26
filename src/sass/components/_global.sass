@@ -1,0 +1,222 @@
+
+// Myself additional mixins/classes
+a,
+input,
+img,
+textarea,
+button
+  outline: none
+
+p
+  margin: 0
+  padding: 0
+
+.input-group
+  &.inline-group
+    display: inline-block
+    vertical-align: middle
+
+*
+  box-sizing: border-box
+
+.svg-container,
+.popupwindow
+  display: none
+
+//
+.global_wrapper
+  font-family: 'AkzidenzGroteskPro-Regular', sans-serif, Arial
+  font-weight: normal
+  font-style: normal
+  overflow: hidden
+  height: 100%
+  width: 100%
+
+.wrapper-main
+  // max-width: 1920px;
+  // min-width: 1025px;
+  overflow: hidden
+  margin: 0 auto
+  background: #fff
+
+.container
+  +bs
+  +cf
+  margin: 0 auto
+  overflow: hidden
+  max-width: 1310px
+  padding: 0 30px
+  width: 100%
+  &.w-oh
+    overflow: visible
+
+// variables
+$dark: #262e39
+$grey: #383838
+$light-grey: #898989
+$green: #5ab947
+$dark-green: #437c37
+
+$font-light: "AkzidenzGroteskPro-Light", sans-serif, Arial
+$font-regular: "AkzidenzGroteskPro-Regular", sans-serif, Arial
+$font-light-condensed: "AkzidenzGroteskPro-LightCn", sans-serif, Arial
+
+$ease25: all 0.25s ease-in-out
+
+// variables //
+form input[type=text].error,
+textarea.error
+  border-width: 1px !important
+  border-color: #dd2a1b !important
+  border-style: solid !important
+
+.input-container
+  position: relative
+  label.error
+    position: absolute
+    display: block
+    // bottom: calc(100% + 7px);
+    bottom: -30px
+    right: 0
+    left: 0
+    background: #dd2a1b
+    padding: 7px
+    color: white
+    font-size: 12px
+    line-height: 1.2
+    width: 100%
+    max-width: 230px
+    border-radius: 5px
+    opacity: 1
+    &:after
+      position: absolute
+      display: block
+      width: 10px
+      height: 10px
+      content: ''
+      background: #dd2a1b
+      top: -5px
+      left: calc(50% - 5px)
+      transform: rotate(45deg)
+  label.error.valid
+    display: none !important
+
+h1
+  font-size: 90px
+  color: #fff
+  line-height: 1.2
+
+h2
+  font-size: 35px
+  color: #000
+  line-height: 1.2
+
+.mobile-hidden
+  display: inline-block
+
+// .desktop-hidden {
+//     display: none;
+// }
+
+.bg-grey
+  background: #f2f2f2
+
+.bg-green
+  background: $green
+
+p
+  font-size: 16px
+  color: $dark
+  line-height: 1.2
+
+input[type=text],
+input[type=phone],
+input[type=mail],
+textarea
+  background: #fff
+  padding: 11px 20px
+  color: rgba(38, 46, 57, 0.5)
+  font-family: $font-regular
+  border-radius: 5px
+  font-size: 18px
+  border: 1px solid #fff
+  max-width: 230px
+  width: 100%
+  transition: $ease25
+  -webkit-apperance:none
+
+.button
+  font-size: 16px
+  display: block
+  text-align: center
+  padding: 13px 20px
+  font-family: $font-regular
+  line-height: 1.2
+  border-radius: 5px
+  color: #fff
+  max-width: 230px
+  width: 100%
+  text-transform: uppercase
+  background: $green
+  border: none
+  transition: $ease25
+  &:hover
+    background: $dark-green
+
+.phone-container
+  position: relative
+  input
+    padding-left: 33px
+  &:after
+    content: '+7'
+    display: block
+    position: absolute
+    bottom: 14px
+    margin: auto
+    left: 10px
+    color: rgba(38, 46, 57, 0.5)
+    font-family: $font-regular
+    font-size: 18px
+    line-height: 1.2
+    font-weight: 400
+
+.input-container
+  &:nth-child(1),
+  &:nth-child(2)
+    z-index: 2
+.input-container.phone-container
+    z-index: 3
+
+
+@media screen and (max-width: 1024px)
+  .news-item
+      padding: 20px
+  .news-item__date
+      max-width: 50px
+      margin-right: 20px
+  .mobile-hidden-1024
+      display: none
+@media screen and (max-width: 768px)
+  input[type=text],
+  input[type=phone],
+  input[type=mail],
+  textarea
+      padding: 10px 15px
+      font-size: 12px
+      max-width: 210px
+  input[type=submit]
+      padding: 12px 10px
+      font-size: 12px
+      max-width: 210px
+  h2
+      font-size: 18px
+  .mobile-hidden
+      display: none
+  .button
+      padding: 12px 10px
+      font-size: 11px
+      max-width: 210px
+  .container
+      padding: 0 15px 
+  .mt-25
+    margin-top: 15px

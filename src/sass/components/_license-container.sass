@@ -1,0 +1,140 @@
+// BEGIN license
+.license
+  margin: 105px 0 50px
+
+.license__grid
+  margin-top: 15px
+  border-top: 1px solid #eaeaea
+  padding-top: 65px
+  display: flex
+  justify-content: space-between
+
+.license__left
+  max-width: 330px
+  width: 80%
+  margin-right: 6%
+  h3
+    font-size: 18px
+    color: #000
+    font-family: $font-regular
+  ul
+    li
+      padding: 7px 0
+      border-top: 1px solid #eaeaea
+      margin-top: 10px
+      a
+        display: inline
+        line-height: 1.35
+        border-bottom: 1px solid transparent
+        color: $grey
+        transition: $ease25
+        &:hover
+          border-color: $green
+
+.license__right
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -10px
+
+.license__right-item
+  width: 50%
+  display: flex
+  min-height: 112px
+  padding: 0 15px
+
+.license__right-weight-info
+  font-size: 14px
+  line-height: 1.2
+  color: $light-grey
+
+.license__right-link
+  display: inline
+  width: 100%
+  color: $grey
+  font-size: 18px
+  line-height: 1.2
+  border-bottom: 1px solid transparent
+  transition: $ease25
+  &:hover
+    border-color: $green
+
+.license-icon
+  width: 100%
+  margin-right: 10px
+  max-width: 55px
+  min-width: 55px
+  img
+    width: 100%
+
+@media screen and (max-width: 1240px)
+  .license__right-image
+      max-width: 55px
+      margin-right: 10px
+      img
+          width: 50px
+  .license__right-link
+      font-size: 16px
+
+@media screen and (max-width: 1024px)
+  .license__grid
+      flex-wrap: wrap
+      padding-top: 15px
+  .license__left
+      max-width: 100%
+      width: 100%
+      margin-right: 0
+      h3
+          margin-bottom: 10px
+      ul
+          li
+              margin: 0
+              &:last-child
+                  border-bottom: 1px solid #eaeaea
+                  margin-bottom: 25px
+
+@media screen and (max-width: 768px)
+  // BEGIN license
+  .license
+      margin: 45px 0
+  .license__grid
+      padding-top: 20px
+      flex-wrap: wrap
+  .license__left
+      max-width: 100%
+      width: 100%
+      margin-right: 0
+      h3
+          font-size: 14px
+          margin-bottom: 15px
+      ul
+          li
+              padding: 5px 0
+              a
+                  font-size: 14px
+  .license-icon
+      .ico
+          font-size: 50px
+  .license__right
+      width: 100%
+      margin: 0
+  .license__right-item
+      width: 100%
+      margin: 5px 0
+      align-items: center
+      min-height: 0
+      padding: 5px 0
+  .license__right-weight-info
+      font-size: 14px
+      line-height: 1.2
+      color: $light-grey
+  .license__right-link
+      font-size: 14px
+  .license__right-image
+      margin-right: 10px
+      max-width: 50px
+      img
+          width: 50px
+          height: auto
+// END license

@@ -1,0 +1,308 @@
+// BEGIN Header
+.header
+	position: fixed
+	top: 0
+	width: 100%
+	border-bottom: 1px solid rgba(148, 148, 148, 0.4)
+	transition: $ease25
+	// overflow: hidden
+	z-index: 1000
+	&.fixed
+		background: rgba(0,0,0,0.9)
+	.container
+		overflow: visible
+.header-nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 20px 0
+	position: relative
+	z-index: 2
+.header__logotype
+	margin-right: 40px
+	max-width: 193px
+.header__reverse-container
+	display: flex
+	width: 100%
+	// flex-wrap: wrap
+	border: 1px solid red
+.header__list
+	display: flex
+	justify-content: space-between
+	width: 100%
+	overflow: visible
+.header__list--phones
+	max-width: 320px
+	margin-top: 3px
+	li
+		margin: 0
+.header__dropdown-menu
+	position: absolute
+	background: transparent
+	left: 0
+	top: 25px
+	min-width: 200px
+	height: 0
+	opacity: 0
+	overflow: hidden
+	transition: $ease25
+	&.active
+		height: auto
+		background: rgba(0,0,0,0.95)
+	li
+		padding: 10px 5px
+		border-top: 1px solid rgba(148, 148, 148, 0.4)
+		&:first-child
+			border-top: none
+		a
+			line-height: 1.4
+.header__list-item
+	display: flex
+	margin: auto
+	position: relative
+	a
+		font-size: 16px
+		color: #fff
+		transition: $ease25
+		padding: 5px 0
+		font-family: $font-regular
+		&:hover
+			color: $green
+	&:hover
+		.header__dropdown-menu
+			height: auto
+			opacity: 1
+			background: rgba(0,0,0,0.95)
+	&:nth-child(1),
+	&:nth-child(2)
+		z-index: 3
+.phone-link
+	position: relative
+	display: block
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		font-size: 14px
+		font-family: $font-regular
+		right: -2px
+		top: -12px
+		color: $green
+.phone-link.msk
+	&:after
+		content: 'Москва'
+.phone-link.spb
+	&:after
+		content: 'Санкт-Петербург'
+.hamburger
+	display: none
+.open-dropdown-menu
+	display: none
+.header-dark--editable
+	.header__logotype
+		filter: hue-rotate(190deg) saturate(165%) contrast(216%) invert(100%)
+		transition: $ease25
+	.header__list-item
+		a
+			color: $dark
+	.hamburger-inner
+		background: #000
+		transition: $ease25
+		&:after
+			background: #000
+			transition: $ease25
+		&:before
+			background: #000
+			transition: $ease25
+	&.fixed
+		.header__logotype
+			filter: none
+			transition: $ease25
+		.header__list-item
+			a
+				color: #fff
+		.hamburger-inner
+			background: #fff
+			&:after
+				background: #fff
+			&:before
+				background: #fff
+
+@media screen and (max-width: 1240px)
+  .header__logotype
+      margin-right: 10px
+  .header__list--phones
+      max-width: 270px
+  .header__list-item
+      a
+          font-size: 14px
+  .header-nav
+      padding: 10px 0
+      align-items: flex-start
+  .header__list
+      flex-wrap: wrap
+  .header__list--phones
+      max-width: 250px
+      margin-top: 15px
+  .header__list-menu
+      width: 90%
+      margin-top: -1000px
+      transition: $ease25
+      .header__list-item
+          max-width: 100%
+          width: 100%
+          text-align: center
+          justify-content: center
+  .hamburger
+      display: block
+      padding: 0
+      z-index: 4
+      zoom: 0.9
+      margin: 12px 0 0 15px
+  .hamburger-inner
+      background: #fff
+      transition: $ease25
+      &:after
+          background: #fff
+          transition: $ease25
+      &:before
+          background: #fff
+          transition: $ease25
+  .header__list-menu.is-open
+      margin-top: 0
+@media screen and (max-width: 768px)
+	.header-nav
+	    flex-wrap: wrap
+	.header__list-item
+	    width: 100%
+	    a
+	        padding: 7px 0
+	        font-size: 14px
+	.header__logotype
+	    height: 35px
+	    width: auto
+	    position: relative
+	    z-index: 4
+	header
+	    background: rgba(0, 0, 0, 0.9)
+	    overflow: hidden
+	.header-nav
+	    padding: 8px 0
+	.header__list
+	    flex-wrap: wrap
+	    width: 100%
+	    margin-top: -1000px
+	    transition: $ease25
+	    position: relative
+	    z-index: 2
+	    &.is-open
+	        margin-top: 10px
+	.header__mobile-layout
+	    position: absolute
+	    width: calc(100% + 60px)
+	    left: -30px
+	    top: 0
+	    z-index: 3
+	    background: rgba(0, 0, 0, 0.97)
+	    height: 55px
+	.phone-list-msk
+	    display: flex
+	    text-align: left
+	    width: 100%
+	    margin: 0
+	    text-align: right
+	    justify-content: flex-start
+	.phone-list-spb
+	    display: flex
+	    width: 100%
+	    min-width: 130px
+	    margin: 0
+	.phone-link
+	    margin-top: 0
+	    &:after
+	        right: auto
+	        left: 122px
+	        top: 7px
+	        width: 150px
+	        font-size: 14px
+	        text-align: left
+	
+	.hamburger
+	    display: block
+	    position: absolute
+	    right: 0
+	    padding: 0
+	    top: 27px
+	    z-index: 4
+	    zoom: 0.7
+	    margin: 0
+	
+	.hamburger-inner
+	    background: #fff
+	    &:after
+	        background: #fff
+	    &:before
+	        background: #fff
+	.header__list-item
+	    flex-wrap: wrap
+	    &:hover
+	        .header__dropdown-menu
+	            height: 0
+	            opacity: 0
+	            background: none
+	    &.open-menu
+	        .header__dropdown-menu
+	            width: 100%
+	            position: static
+	            height: auto
+	            opacity: 1
+	            background: rgba(0, 0, 0, 0.95)
+	            padding-left: 25px
+	.header__list-menu
+	    .header__list-item
+	        justify-content: flex-start
+	.header__dropdown-menu
+	    text-align: left
+	    li
+	        padding: 3px 5px
+	.header__list-item
+	    .open-dropdown-menu
+	        padding: 5px 7px
+	.header-dark--editable
+	    .header__logotype
+	        filter: none
+	    .header__list-item
+	        a
+	            color: #fff
+	    .hamburger-inner
+	        background: #fff
+	        transition: $ease25
+	        &:after
+	            background: #fff
+	            transition: $ease25
+	        &:before
+	            background: #fff
+	            transition: $ease25
+	.open-dropdown-menu
+	    display: block
+	    padding: 5px 7px
+	    font-size: 14px
+	    font-family: $font-regular
+	    position: absolute
+	    right: 0
+	    width: 24px
+	    height: 24px
+	    top: 5px
+	    color: #fff
+	    font-size: 16px
+	    background: rgba(255, 255, 255, 0.1)
+	    border-radius: 3px
+	    img
+	        width: 10px
+	        height: 10px
+	        font-size: 14px
+	        transition: $ease25
+	    &.is-active
+	        img
+	            transform: rotate(45deg)
+// END Header

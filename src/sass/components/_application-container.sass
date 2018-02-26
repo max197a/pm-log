@@ -1,0 +1,82 @@
+// BEGIN application
+.application
+  padding-top: 121px
+
+.application-border
+  border: 1px solid #eaeaea
+  padding: 40px 25px 0
+  display: flex
+  justify-content: flex-start
+  overflow: hidden
+  padding-left: 9%
+  h2
+    margin-top: 70px
+  .application__left
+    align-self: flex-end
+    text-align: center
+    img
+      width: 100%
+      margin-bottom: -4px
+  .application__right
+    margin-left: 10.5%
+    max-width: 350px
+    margin-bottom: 30px
+  p
+    font-size: 18px
+    color: $grey
+    margin-top: 15px
+  .application__links
+    display: flex
+    justify-content: flex-start
+    margin-top: 45px
+    a.google-button,
+    a.appstore-button
+      display: block
+      margin-right: 10px
+      background-size: cover
+      img
+        max-width: 163px
+        width: 100%
+
+@media screen and (max-width: 768px)
+  // BEGIN application
+  .application
+      padding-top: 30px
+  .application-border
+      padding: 40px 20px 0
+      display: flex
+      justify-content: center
+      overflow: hidden
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      align-items: center
+      h2
+          margin-top: 0
+      .application__left
+          margin-top: 35px
+          align-self: center
+          img
+              width: 100%
+              margin-bottom: -100px
+      .application__right
+          margin-left: 0
+          max-width: 100%
+          text-align: center
+      p
+          font-size: 18px
+          color: $grey
+          margin-top: 30px
+      .application__links
+          display: flex
+          justify-content: center
+          margin-top: 30px
+          margin-bottom: 0
+          a.google-button,
+          a.appstore-button
+              display: block
+              margin-right: 5px
+              background-size: cover
+              img
+                  max-width: 140px
+                  width: 90%
+// END application
