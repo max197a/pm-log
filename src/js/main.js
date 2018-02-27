@@ -269,29 +269,22 @@ $(document).ready(function(){
     });
 
 
-
+(function(){
+  var itemsSourceArray = [];
+  $.each($('.reviews-carousel').find('a[data-mfp]'), function() {
+    itemsSourceArray.push({src: $(this).data('mfp')})
+  });
+  //
     $('.reviews-carousel').magnificPopup({
       type: 'image',
-      // items: [
-      //       {
-      //         src: '../images/review-1.jpg'
-      //       },
-      //       {
-      //         src: '../images/review-2.jpg',
-      //       },
-      //       {
-      //         src: '../images/review-3.jpg',
-      //       },
-      //       {
-      //         src: '../images/review-4.jpg',
-      //       }
-      //     ],
+      items: itemsSourceArray,
       gallery: {
         enabled: true,
         navigateByImgClick: true,
         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
       }
     });
+}())
 
     // // Magnific Popup
     // var startWindowScroll = 0;
