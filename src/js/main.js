@@ -575,7 +575,16 @@ $(document).ready(function() {
     $(this).on('submit', function() {
       var action = $(this).attr('action');
 
+      if ( $('#personal-info-error').hasClass("error") ) {
+          $('.checkmark').addClass('error');
+      }
+
+      if ( $('#personal-info-error').hasClass("error valid") ) {
+          $('.checkmark').removeClass('error');
+      }
+
       if (!$(this).find('input.error').length) {
+        $(this).removeClass('no-valid');
         $.post(action, $(this).serialize(), function() {
           // $.magnificPopup.close();
           var $thanksModal = $('#thankPopup')[0].outerHTML.replace('mfp-hide', '')
@@ -586,8 +595,20 @@ $(document).ready(function() {
             type: 'inline'
           });
         })
+      } else {
+        $(this).addClass('no-valid')
       }
     })
   })
+
+  $(document).on('click', '.container-checkbox', function(){
+      var $self = $(this)
+          $form = $self.parents('form');
+      if ( $("input[name='personal-info']").is(':checked')) {
+          $('.checkmark').removeClass('error');
+      } else {
+        if ($form.hasClass('no-valid')) $('.checkmark').addClass('error');
+      }
+    });
 
 });

@@ -33,11 +33,12 @@ block content
               input#file-2.inputfile.inputfile-2(type='file', name='file-2[]', data-multiple-caption='{count} files selected', multiple='')
               label(for='file-2')
                 span + прикрепить файл
-            label.container-checkbox
-              | Согласен с 
-              a(href='pdf.pdf', target='_blank') политикой конфиденциальности
-              input(type='checkbox', checked='checked', name='personal-info')
-              span.checkmark
+            .error-label-container.error-check
+              label.container-checkbox
+                | Согласен с 
+                a(href='pdf.pdf', target='_blank') политикой конфиденциальности
+                input(type='checkbox', name='personal-info', required)
+                span.checkmark
   // End contanct head
   // Begin wrapper-main
   .wrapper-main.bg-grey
