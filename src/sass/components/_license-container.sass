@@ -41,10 +41,14 @@
 .license__right-item
   width: 50%
   display: flex
-  min-height: 112px
+  min-height: 0
+  margin-bottom: 20px
   padding: 0 15px
-  a
-    display: flex
+  &:hover
+    .license__right-link
+        border-color: $green
+.license__right-image
+  max-height: 65px
 
 .license__right-weight-info
   font-size: 14px
@@ -124,7 +128,7 @@
       margin: 0
   .license__right-item
       width: 100%
-      margin: 5px 0
+      margin: 5px 0 5px
       align-items: center
       min-height: 0
       padding: 5px 0
