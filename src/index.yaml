@@ -2,24 +2,24 @@ ProjectTitle: PM-LOG
 
 PageList:
 - file: homepage.html
-  ready: 70
+  ready: 90
 - file: bus.html
-  ready: 70
+  ready: 90
 - file: delivery.html
-  ready: 70
+  ready: 90
 - file: news.html
-  ready: 70
+  ready: 90
 - file: news-page.html
-  ready: 70
+  ready: 90
 - file: night.html
-  ready: 70
+  ready: 90
 - file: order-bus.html
-  ready: 70
+  ready: 90
 - file: price.html
-  ready: 70
+  ready: 90
 - file: spb.html
-  ready: 70
+  ready: 90
 - file: about.html
-  ready: 70
+  ready: 90
 - file: contacts.html
-  ready: 70
+  ready: 90
