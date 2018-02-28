@@ -26,6 +26,11 @@
 		border-right: none
 	&:nth-child(n+3)
 		border-bottom: none
+	a.button
+		max-width: 200px
+	&:hover
+		a.button
+			margin-bottom: 0
 .buses__info
 	display: flex
 	align-self: flex-end
@@ -59,9 +64,11 @@
 	    width: 100%
 	    min-height: 250px
 	    border-right: none
-	    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
 	    &:nth-last-child
 	        border-bottom: none
+	    a.button
+	    	max-width: 160px
 	.buses__info
 	    padding: 10px
 	.buses__quant-number

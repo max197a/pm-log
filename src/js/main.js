@@ -84,7 +84,7 @@ $(document).ready(function(){
     .on('click', '[href="#"]', function(e) {
   		e.preventDefault();
   	})
-    .on('click', 'a[href^="#section"]', function() { // section scroll
+    .on('click', 'a.scroll', function() { // section scroll
       var el = $(this).attr('href');
       $('body, html').animate({
           scrollTop: $(el).offset().top}, 1000);
@@ -275,7 +275,7 @@ $(document).ready(function(){
     itemsSourceArray.push({src: $(this).data('mfp')})
   });
   //
-    $('.reviews-carousel').magnificPopup({
+    $('.reviews-carousel a').magnificPopup({
       type: 'image',
       items: itemsSourceArray,
       gallery: {

@@ -1,5 +1,6 @@
 // Begin footer
 footer.footer
+  a#footer(href='#')
   // Begin footer-nav
   .footer-nav
     .container
@@ -21,7 +22,7 @@ footer.footer
           label.container-checkbox
             | Согласен с 
             a.open-politic(href='#politic') политикой конфиденциальности
-            input(type='checkbox', name='personal-info', required)
+            input(type='checkbox', checked='checked', name='personal-info', required)
             span.checkmark
       .under-footer
         .under-footer__left

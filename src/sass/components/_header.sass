@@ -69,13 +69,14 @@
 		&:hover
 			color: $green
 	&:hover
+		z-index: 5
 		.header__dropdown-menu
 			height: auto
 			opacity: 1
 			background: rgba(0,0,0,0.95)
-	&:nth-child(1),
-	&:nth-child(2)
-		z-index: 3
+	// &:nth-child(1),
+	// &:nth-child(2)
+	// 	z-index: 3
 .phone-link
 	position: relative
 	display: block
@@ -105,6 +106,10 @@
 	.header__list-item
 		a
 			color: $dark
+	.header__dropdown-menu
+		li
+			a
+				color: #fff
 	.hamburger-inner
 		background: #000
 		transition: $ease25
