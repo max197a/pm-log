@@ -454,35 +454,6 @@ $(document).ready(function(){
     });
   }
 
-
-    // function svgSetOffset(){
-    //     var paths = $('.how-order.how-we-work').find('.ico.ico-phone');
-    //     paths.each(function(i,path){
-    //       var $path = $(path);
-    //       var pathL = Math.floor(path.getTotalLength()) + 1
-    //       $path.css("stroke-dasharray", pathL)
-    //       $path.css("stroke-dashoffset", pathL)
-    //       $path.attr('stroke', '#262e39').attr('stroke-width', .4)
-    //     })
-    //   }
-
-    // function animateSvg(el, direction){
-    //   var paths = $(el).find('.draw-icon');
-    //   paths.each(function(i,path){
-    //     var $path = $(path);
-    //     var pathL = Math.floor(path.getTotalLength()) + 1
-    //     anime({
-    //       targets: path,
-    //       strokeDashoffset: [pathL, 0],
-    //       easing: 'easeInOutSine',
-    //       duration: 600,
-    //       // delay: function(el, i) { return i * 250 },
-    //       direction: 'alternate',
-    //       loop: false
-    //     });
-    //   })
-    // }
-
   //////////
   // BARBA PJAX
   //////////
