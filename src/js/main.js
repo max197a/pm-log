@@ -7,6 +7,17 @@ $(document).ready(function(){
         $('header').addClass('header-dark--editable');
     }
 
+    var myElement = document.getElementsByClassName("how-order");
+
+    var elementWatcher = scrollMonitor.create( myElement );
+
+    elementWatcher.enterViewport(function() {
+        $(myElement).find('.transport__list-item').addClass('is-active');
+    });
+    elementWatcher.exitViewport(function() {
+        $(myElement).find('.transport__list-item').removeClass('is-active');
+    });
+
   //////////
   // Global variables
   //////////

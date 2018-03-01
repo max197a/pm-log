@@ -37,5 +37,71 @@
         max-height: max-content
         height: auto
         height: max-content
+.transport__list-item.is-active
+  .ico
+    fill: transparent
+    stroke: #fff
+    stroke-miterlimit: 0.4
+    stroke-width: 0.4
+    animation: pathGrowing 5s linear, pathOpacity 2s linear, pathColor 4s linear
+    animation-fill-mode: forwards
+    opacity: 0
+    @keyframes pathOpacity
+      0%
+        opacity: 0
+      100%
+        opacity: 1
+    @keyframes pathColor
+      0%
+        fill: transparent
+      25%
+        fill: transparent
+      50%
+        fill: transparent
+      75%
+        fill: currentColor
+      100%
+        fill: currentColor
+
+    &.ico-phone
+      stroke-dasharray: 260
+      animation-delay: 0.5s
+      @keyframes pathGrowing
+        0%
+          stroke-dashoffset: 260
+        100%
+          stroke-dashoffset: 0
+    &.ico-hands
+      stroke-dasharray: 210
+      animation-delay: 1.5s
+      @keyframes pathGrowing
+        0%
+          stroke-dashoffset: 210
+        100%
+          stroke-dashoffset: 0
+    &.ico-math
+      animation-delay: 2.5s
+      stroke-dasharray: 180
+      @keyframes pathGrowing
+        0%
+          stroke-dashoffset: 180
+        100%
+          stroke-dashoffset: 0
+    &.ico-docs
+      animation-delay: 3.5s
+      stroke-dasharray: 180
+      @keyframes pathGrowing
+        0%
+          stroke-dashoffset: 180
+        100%
+          stroke-dashoffset: 0
+    &.ico-an-bus
+      animation-delay: 4.5s
+      stroke-dasharray: 200
+      @keyframes pathGrowing
+        0%
+          stroke-dashoffset: 200
+        100%
+          stroke-dashoffset: 0
 
 // BEGIN delivery-page
