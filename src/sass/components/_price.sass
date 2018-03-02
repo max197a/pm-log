@@ -1,5 +1,9 @@
 // BEGIN price-page
 
+.price
+	> .container
+		overflow: visible
+
 .under-info
 	font-size: 14px
 	color: $light-grey
@@ -16,10 +20,20 @@
 	padding: 10px 5px
 	width: 25%
 	transition: $ease25
-	&:hover
+	&:hover, &.is-active
 		background: #fff
 		.price__sub-title
 			color: $green
+	.price__title, .price__sub-title, .price__item-list p
+		transition: .25s $ease
+	&.is-active:hover
+		transform: translate3d(0,-20px,0) scale(1.02)
+		transform-origin: center center
+		// background: $green
+		// .price__sub-title
+		// 	color: white
+		// .price__title, .price__sub-title, .price__item-list p
+		// 	color: white
 	.button
 		margin-top: 10px
 		max-width: 140px
