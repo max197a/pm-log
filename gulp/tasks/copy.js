@@ -3,7 +3,7 @@ var config = require('../config');
 
 gulp.task('copy:fonts', function() {
   return gulp
-    .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
+    .src(config.src.fonts + '/*.{ttf,eot,svg,otf,woff,woff2}')
     .pipe(gulp.dest(config.dest.fonts));
 });
 
@@ -20,7 +20,7 @@ gulp.task('copy:rootfiles', function() {
 });
 
 gulp.task('copy', [
-  // 'copy:rootfiles',
+  'copy:rootfiles',
   'copy:vendor',
   'copy:fonts'
 ]);
